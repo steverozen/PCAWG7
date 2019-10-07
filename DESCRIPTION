@@ -9,10 +9,13 @@ Authors@R:
            comment = c(ORCID = "0000-0002-4288-0056"))
 Description: Contains data from Alexandrov, Kim, Haradhvala, Huang et al.,
    'Repertoire of Mutational Signatures in Human Cancer'. Still a work in progress,
-   so not all data from the paper are available. Contact the author with
+   so not all data from the paper are available. Contact the author of the package with
    requests.
 License: GPL-3
+Language: en-US
 Encoding: UTF-8
 LazyData: true
 Depends: R (>= 3.5),
 RoxygenNote: 6.1.1
+Suggests:
+  BSgenome
