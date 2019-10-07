@@ -1,13 +1,16 @@
-Package: PCAWG7.WGS.Spectra
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Package: PCAWG7
+Title: Repository of data from 'Repertoire of Mutational Signatures in Human Cancer'
+Version: 0.0.0.9001
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Steven G.",
+           family = "Rozen",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+           email = "steverozen@gmail.com",
+           comment = c(ORCID = "0000-0002-4288-0056"))
+Description: Contains data from Alexandrov, Kim, Haradhvala, Huang et al.,
+   'Repertoire of Mutational Signatures in Human Cancer'. Still a work in progress,
+   so not all data from the paper are available. Contact the author with
+   requests.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
