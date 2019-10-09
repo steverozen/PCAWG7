@@ -4,24 +4,26 @@
 \name{sgnature}
 \alias{sgnature}
 \alias{signature}
-\title{PCAWG7 SigProfiler whole genome signatures.}
-\format{An object of class \code{list} of length 2.}
+\title{PCAWG7 SigProfiler reference signatures.}
+\format{A list with the following elements and sub-elements:
+
+\describe{
+  \item{genome}{\describe{A list with the elements:
+    \item{SBS96}{Strand-agnostic single-base substitutions in trinucleotide context.}
+    \item{SBS192}{Transcriptionally stranded single-base substitutions in trinucleotide context.}
+    \item{DBS}{Strand-agnostic doublet-base substitutions.}
+  }}
+  \item{exome}{\describe{A list with the elements:
+    \item{SBS96}{Strand-agnostic single-base substitutions in trinucleotide context.}
+ }}
+}}
+\source{
+Subdirectories of \url{https://www.synapse.org/#!Synapse:syn12009743}, 2019 Oct 09
+}
 \usage{
 signature
 }
 \description{
-This is list with the following elements and sub-elements:
-}
-\details{
-\describe{
-  \item{genome}{\describe{
-    \item{SBS96}{Strand-agnostic single-base substitutions in trinucleotide context.}
-    \item{SBS192}{Transcriptionally stranded single-base substitutions in trinucleotide context}
-    \item{DBS}{Strand-agnostic doublet-base substitutions}
-  }}
-  \item{exome}{\describe{
-    \item{SBS96}{Strand-agnostic single-base substitutions in trinucleotide context.}
- }}
-}
+PCAWG7 SigProfiler reference signatures.
 }
 \keyword{datasets}
