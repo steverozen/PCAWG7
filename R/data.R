@@ -28,3 +28,10 @@
 #'
 #' @name sgnature
 "signature"
+
+#' Vectors of PCAWG \code{tumor_wgs_icgc_specimin_id}
+#'
+#' @source https://dcc.icgc.org/api/v1/download?fn=/PCAWG/data_releases/latest/release_may2016.v1.4.with_consensus_calls.tsv, 2019 Oct 09
+#'
+#' @name PCAWG.sample.id
+"PCAWG.sample.id"
