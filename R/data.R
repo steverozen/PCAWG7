@@ -24,6 +24,7 @@
 #'     \item{SBS96}{Strand-agnostic single-base substitutions in trinucleotide context.}
 #'     \item{SBS192}{Transcriptionally stranded single-base substitutions in trinucleotide context.}
 #'     \item{DBS}{Strand-agnostic doublet-base substitutions.}
+#'     \item{ID}{Strand-agnostic indels.}
 #'   }}
 #'   \item{exome}{\describe{A list with the elements:
 #'     \item{SBS96}{Strand-agnostic single-base substitutions in trinucleotide context.}
