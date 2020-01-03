@@ -1,11 +1,11 @@
-#' Single Base Substitution (SBS) spectra in trinucleotide context.
+#' Single Base Substitution (SBS) spectra in trinucleotide context (deprecated).
 #'
 #'
 #' @name PCAWG.WGS.SBS.96
 "PCAWG.WGS.SBS.96"
 
 
-#' Doublet Base Substitution (SBS) spectra.
+#' Doublet Base Substitution (SBS) spectra (deprecated).
 #'
 #'
 #' @name PCAWG.WGS.DBS
@@ -13,7 +13,9 @@
 
 #' PCAWG7 SigProfiler reference signatures.
 #'
-#' @source Subdirectories of \url{https://www.synapse.org/#!Synapse:syn12009743}, 2019 Oct 09
+#' @source Subdirectories of \url{https://www.synapse.org/#!Synapse:syn12009743},
+#'  2019 Oct 09, populated by
+#'  \code{data-raw/populate.variable.siganture.R}.
 #'
 #' @format
 #'

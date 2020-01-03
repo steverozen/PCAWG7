@@ -14,10 +14,13 @@ signature$genome$SBS192 <-
                      strict = FALSE)
 
 signature$genome$SBS96  <-
-  ICAMS::ReadCatalog("data-raw/sigProfiler_SBS_signatures_2019_05_22.csv",
-                     catalog.type = "counts.signature",
-                     region = "genome" #, ref.genome = "hg19"
-                     )
+  ICAMS::ReadCatalog(
+    "data-raw/sigProfiler_SBS_signatures_2019_05_22.csv",
+    catalog.type = "counts.signature",
+    region = "genome",
+    ref.genome =
+      BSgenome.Hsapiens.1000genomes.hs37d5::BSgenome.Hsapiens.1000genomes.hs37d5
+  )
 
 signature$genome$DBS    <-
   ICAMS::ReadCatalog("data-raw/sigProfiler_DBS_signatures.csv",
@@ -36,17 +39,20 @@ ReadPCAWG7ID <- function(file) {
   rownames(df) <- new.rownames
   df <- df[ , -(1:4)]
   return(df)
-
 }
+
 signature$genome$ID <-
-  ICAMS::as.catalog(ReadPCAWG7ID(),
-                                  region = "genome",
-                                  catalog.type = "counts.signature")
+  ICAMS::as.catalog(
+    ReadPCAWG7ID("data-raw/sigProfiler_ID_signatures.csv"),
+    region = "genome",
+    catalog.type = "counts.signature",
+    ref.genome =
+      BSgenome.Hsapiens.1000genomes.hs37d5::BSgenome.Hsapiens.1000genomes.hs37d5)
 
 signature$exome$SBS96   <-
   ICAMS::ReadCatalog("data-raw/sigProfiler_exome_SBS_signatures.csv",
                      catalog.type = "counts.signature",
                      region = "exome" #, ref.genome = "hg19"
-                     )
+  )
 
 usethis::use_data(signature, overwrite = TRUE)
