@@ -11,7 +11,7 @@
   \item{genome}{\describe{A list with the elements:
     \item{SBS96}{Strand-agnostic single-base substitutions in trinucleotide context.}
     \item{SBS192}{Transcriptionally stranded single-base substitutions in trinucleotide context.}
-    \item{DBS}{Strand-agnostic doublet-base substitutions.}
+    \item{DBS78}{Strand-agnostic doublet-base substitutions.}
     \item{ID}{Strand-agnostic indels.}
   }}
   \item{exome}{\describe{A list with the elements:
@@ -19,7 +19,9 @@
  }}
 }}
 \source{
-Subdirectories of \url{https://www.synapse.org/#!Synapse:syn12009743}, 2019 Oct 09
+Subdirectories of \url{https://www.synapse.org/#!Synapse:syn12009743},
+ 2019 Oct 09, populated by
+ \code{data-raw/populate.variable.siganture.R}.
 }
 \usage{
 signature

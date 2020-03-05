@@ -3,12 +3,12 @@
 \docType{data}
 \name{PCAWG.WGS.DBS}
 \alias{PCAWG.WGS.DBS}
-\title{Doublet Base Substitution (SBS) spectra.}
+\title{Doublet Base Substitution (SBS) spectra (deprecated).}
 \format{An object of class \code{matrix} with 78 rows and 2780 columns.}
 \usage{
 PCAWG.WGS.DBS
 }
 \description{
-Doublet Base Substitution (SBS) spectra.
+Doublet Base Substitution (SBS) spectra (deprecated).
 }
 \keyword{datasets}

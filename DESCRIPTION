@@ -16,7 +16,7 @@ Language: en-US
 Encoding: UTF-8
 LazyData: true
 Depends: R (>= 3.5),
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2
 Suggests:
   BSgenome,
   BSgenome.Hsapiens.1000genomes.hs37d5

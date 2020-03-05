@@ -3,12 +3,12 @@
 \docType{data}
 \name{PCAWG.WGS.SBS.96}
 \alias{PCAWG.WGS.SBS.96}
-\title{Single Base Substitution (SBS) spectra in trinucleotide context.}
+\title{Single Base Substitution (SBS) spectra in trinucleotide context (deprecated).}
 \format{An object of class \code{matrix} with 96 rows and 2780 columns.}
 \usage{
 PCAWG.WGS.SBS.96
 }
 \description{
-Single Base Substitution (SBS) spectra in trinucleotide context.
+Single Base Substitution (SBS) spectra in trinucleotide context (deprecated).
 }
 \keyword{datasets}
