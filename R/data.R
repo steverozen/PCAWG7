@@ -1,4 +1,5 @@
 #' Single Base Substitution (SBS) spectra in trinucleotide context (deprecated).
+#' Use \code{\link{spectra}$SBS96} instead.
 #'
 #'
 #' @name PCAWG.WGS.SBS.96
@@ -6,6 +7,7 @@
 
 
 #' Doublet Base Substitution (SBS) spectra (deprecated).
+#' Use \code{\link{spectra}$DBS78} instead.
 #'
 #'
 #' @name PCAWG.WGS.DBS
