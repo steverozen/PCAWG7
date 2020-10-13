@@ -4,7 +4,9 @@
 \name{PCAWG.WGS.DBS}
 \alias{PCAWG.WGS.DBS}
 \title{Doublet Base Substitution (SBS) spectra (deprecated).}
-\format{An object of class \code{matrix} with 78 rows and 2780 columns.}
+\format{
+An object of class \code{matrix} (inherits from \code{array}) with 78 rows and 2780 columns.
+}
 \usage{
 PCAWG.WGS.DBS
 }
