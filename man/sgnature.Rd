@@ -5,7 +5,8 @@
 \alias{sgnature}
 \alias{signature}
 \title{PCAWG7 SigProfiler reference signatures.}
-\format{A list with the following elements and sub-elements:
+\format{
+A list with the following elements and sub-elements:
 
 \describe{
   \item{genome}{\describe{A list with the elements:
@@ -17,7 +18,8 @@
   \item{exome}{\describe{A list with the elements:
     \item{SBS96}{Strand-agnostic single-base substitutions in trinucleotide context.}
  }}
-}}
+}
+}
 \source{
 Subdirectories of \url{https://www.synapse.org/#!Synapse:syn12009743},
  2019 Oct 09, populated by
