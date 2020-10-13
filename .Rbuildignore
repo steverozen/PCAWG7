@@ -1,5 +1,7 @@
 ^PCAWG7\.Rproj$
 ^\.Rproj\.user$
 ^data-raw$
-^README.rmd$
-^news.md$
+^README\.rmd$
+^news\.md$
+^.travis\.yml$
+^PCAWG7_.*\.pdf$
