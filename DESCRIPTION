@@ -1,6 +1,6 @@
 Package: PCAWG7
 Title: Repository of data from 'Repertoire of Mutational Signatures in Human Cancer'
-Version: 0.0.1
+Version: 0.0.1.9001
 Authors@R: 
     person(given = "Steven G.",
            family = "Rozen",
