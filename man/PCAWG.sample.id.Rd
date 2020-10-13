@@ -3,9 +3,15 @@
 \docType{data}
 \name{PCAWG.sample.id}
 \alias{PCAWG.sample.id}
-\title{Vectors of PCAWG \code{tumor_wgs_icgc_specimin_id}.}
+\title{Vectors of the PCAWG \code{tumor_wgs_icgc_specimin_id}s.}
 \format{
-An object of class \code{list} of length 3.
+A list with the elements:
+
+\describe{
+  \item{white}{Whitelisted IDs}
+  \item{grey}{Greylisted IDs}
+  \item{black}{Blacklisted IDs}
+}
 }
 \source{
 \url{https://dcc.icgc.org/api/v1/download?fn=/PCAWG/data_releases/latest/release_may2016.v1.4.with_consensus_calls.tsv},
@@ -15,9 +21,10 @@ An object of class \code{list} of length 3.
 PCAWG.sample.id
 }
 \description{
-Note the the PCAWG7 spectra catalogs have 2 blacklisted
-sample ids (they were blacklisted after the analysis was
-underway). The blacklisted samples are \code{SP116419}
-and \code{SP116883}.
+Note that the PCAWG7 spectra catalogs have 2
+sample ids that were blacklisted after the mutational
+signature analysis was
+underway. The blacklisted samples are \code{SP116419}
+and \code{SP116883}, which are in \code{PCAWG.sample.id$black}.
 }
 \keyword{datasets}
