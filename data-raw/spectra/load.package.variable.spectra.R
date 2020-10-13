@@ -43,3 +43,5 @@ spectra$other.exome$SBS192<- rr("WES_Other.192.csv", "exome")
 spectra$other.exome$SBS1536<- rr("WES_Other.1536.csv", "exome")
 spectra$other.exome$DBS78<- rr("WES_Other.dinucs.csv", "exome")
 # Note, no indels
+
+usethis::use_data(spectra, overwrite = TRUE)

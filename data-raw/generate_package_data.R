@@ -1,5 +1,8 @@
 library(ICAMS)
 
+# This file creates package variable that are now deprecated
+# (superseded by variable "exposure")
+
 PCAWG.WGS.SBS.96 <- ICAMS::ReadCatalog("data-raw/WGS_PCAWG.96.csv", region = "genome")
 class(PCAWG.WGS.SBS.96) <- "matrix"
 usethis::use_data(PCAWG.WGS.SBS.96)
