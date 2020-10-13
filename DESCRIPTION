@@ -17,7 +17,4 @@ Encoding: UTF-8
 LazyData: true
 Depends: R (>= 3.5),
 RoxygenNote: 7.1.1
-biocViews:
-Suggests:
-  BSgenome,
-  BSgenome.Hsapiens.1000genomes.hs37d5
+
