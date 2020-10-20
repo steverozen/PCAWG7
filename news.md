@@ -1,3 +1,7 @@
+# PCAWG7 0.0.3
+* Added package man page.
+* Added more plots to data-raw/plots/
+
 # PCAWG7 0.0.2
 * Fully populated and documented exposure and spectra
 * All changes backward compatible

@@ -1,6 +1,6 @@
 Package: PCAWG7
 Title: Repository of data from 'Repertoire of Mutational Signatures in Human Cancer'
-Version: 0.0.2
+Version: 0.0.3
 Authors@R: 
     person(given = "Steven G.",
            family = "Rozen",
@@ -8,9 +8,7 @@ Authors@R:
            email = "steverozen@gmail.com",
            comment = c(ORCID = "0000-0002-4288-0056"))
 Description: Contains data from Alexandrov, Kim, Haradhvala, Huang et al.,
-   'Repertoire of Mutational Signatures in Human Cancer'. Still a work in progress,
-   so not all data from the paper are available. Contact the author of the package with
-   requests.
+   'Repertoire of Mutational Signatures in Human Cancer'. Please see ?PCAWG7.
 License: GPL-3
 Language: en-US
 Encoding: UTF-8

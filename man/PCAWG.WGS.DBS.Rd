@@ -4,7 +4,7 @@
 \name{PCAWG.WGS.DBS}
 \alias{PCAWG.WGS.DBS}
 \title{Doublet Base Substitution (SBS) spectra (deprecated).
-Use \code{\link{spectra}$DBS78} instead.}
+Use \code{\link{spectra}$PCAWG$DBS78} instead.}
 \format{
 An object of class \code{matrix} (inherits from \code{array}) with 78 rows and 2780 columns.
 }
@@ -13,6 +13,6 @@ PCAWG.WGS.DBS
 }
 \description{
 Doublet Base Substitution (SBS) spectra (deprecated).
-Use \code{\link{spectra}$DBS78} instead.
+Use \code{\link{spectra}$PCAWG$DBS78} instead.
 }
 \keyword{datasets}
