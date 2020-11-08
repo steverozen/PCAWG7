@@ -4,24 +4,63 @@
 
 ExposureStats1TumorType <- function(exposure) {
   present <- exposure > 0
-  sig2proportion.present <- rowSums(present) / ncol(present)
-  sig2is.present <- sig2proportion.present > 0
-  sig2mean.of.those.present <-
-    (rowSums(exposure) / ncol(exposure)) / sig2proportion.present
+  proportion.present <- rowSums(present) / ncol(present)
+  is.present <- proportion.present > 0
+  mean.of.those.present <-
+    (rowSums(exposure) / ncol(exposure)) / proportion.present
 
   summary <- lapply(1:nrow(exposure),
                     function(x) {
-                      return(list(mean.of.present = sig2mean.of.those.present[x],
-                                  proportion.present = sig2proportion.present[x])) })
+                      return(list(mean.of.present = mean.of.those.present[x],
+                                  proportion.present = proportion.present[x])) })
 
-  names(summary) <- rownames(exposure)
-  summary <- summary[sig2is.present]
+  tt <- matrix(unlist(summary, recursive = FALSE), ncol = 2, byrow = TRUE)
 
-  return(summary)
+  rownames(tt) <- rownames(exposure)
+  colnames(tt) <- c("mean.of.those.present", "proportion.present")
+  tt <- tt[is.present, ]
+  return(tt)
+}
+
+GatherAllPCAWG7ExposureInfo <- function() {
+  PCAWG.SBS96 <-
+    SplitPCAWGMatrixByTumorType(PCAWG7::exposure$PCAWG$SBS96)
+  other.genome.SBS96 <-
+    SplitPCAWGMatrixByTumorType(PCAWG7::exposure$other.genome$SBS96)
+  TCGA.SBS96 <-
+    SplitPCAWGMatrixByTumorType(PCAWG7::exposure$TCGA$SBS96)
+  other.exome.SBS96 <-
+    SplitPCAWGMatrixByTumorType(PCAWG7::exposure$other.exome$SBS96)
+
+  all.types <-
+    lapply(list(PCAWG.SBS96,
+                other.genome.SBS96,
+                TCGA.SBS96,
+                other.exome.SBS96), names)
+
+  all.types <- unique(unlist(all.types))
+
+  PCAWG.DBS78 <- SplitPCAWGMatrixByTumorType(PCAWG7::exposure$PCAWG$DBS78)
+
+  PCAWG.ID <- SplitPCAWGMatrixByTumorType(PCAWG7::exposure$PCAWG$ID)
+  TCGA.ID  <- SplitPCAWGMatrixByTumorType(PCAWG7::exposure$TCGA$ID)
+
+  rr<- sum(ICAMS::all.abundance$BSgenome.Hsapiens.1000genomes.hs37d5$genome$`96`) /
+    sum(ICAMS::all.abundance$BSgenome.Hsapiens.1000genomes.hs37d5$exome$`96`)
+
+
+  lad <- cbind(PCAWG.SBS96[["Lung-AdenoCA"]],
+               TCGA.SBS96$`Lung-AdenoCa` * rr,
+               other.genome.SBS96$`Lung-AdenoCa`,
+               other.exome.SBS96$`Lung-AdenoCa` * rr)
+
+  ladx <- ExposureStats1TumorType(lad)
+
 }
 
 if (FALSE) {
-  xx <- ExposureStats1TumorType(PCAWG7::exposure$PCAWG$SBS96)
+
+  xx <- ExposureStats1TumorType(by.type[[1]])
 
 CancerTypeToExposureStatData <- function() {
   exposure <- PCAWG7::exposure$PCAWG$SBS96
