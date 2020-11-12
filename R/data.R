@@ -87,7 +87,7 @@
 #' @name exposure
 "exposure"
 
-########
+
 #' PCAWG7 mutational spectra (catalogs).
 #'
 #' @source Files below \url{https://www.synapse.org/#!Synapse:syn11801889},
@@ -126,6 +126,15 @@
 #'
 #' @name spectra
 "spectra"
+
+#' Exposure statistics from the PCAWG7 paper
+#'
+#' @source Computed from other package variables uisng \code{GatherPCAWG7ExposureStatsSBS96}.
+#'
+#' @format For initial testing see \code{exposure.stats$PCAWG$SBS96}.
+#'
+#' @name exposure.stats
+"exposure.stats"
 
 
 #' Vectors of the PCAWG \code{tumor_wgs_icgc_specimin_id}s.

@@ -22,24 +22,40 @@ ExposureStats1TumorType <- function(exposure) {
   return(tt)
 }
 
-GatherAllPCAWG7ExposureInfo <- function() {
+GatherPCAWG7ExposureStatsSBS96 <- function() {
   PCAWG.SBS96 <-
     SplitPCAWGMatrixByTumorType(PCAWG7::exposure$PCAWG$SBS96)
-  other.genome.SBS96 <-
-    SplitPCAWGMatrixByTumorType(PCAWG7::exposure$other.genome$SBS96)
-  TCGA.SBS96 <-
-    SplitPCAWGMatrixByTumorType(PCAWG7::exposure$TCGA$SBS96)
-  other.exome.SBS96 <-
-    SplitPCAWGMatrixByTumorType(PCAWG7::exposure$other.exome$SBS96)
 
-  all.types <-
-    lapply(list(PCAWG.SBS96,
-                other.genome.SBS96,
-                TCGA.SBS96,
-                other.exome.SBS96), names)
+  if (FALSE) {
+    other.genome.SBS96 <-
+      SplitPCAWGMatrixByTumorType(PCAWG7::exposure$other.genome$SBS96)
+    TCGA.SBS96 <-
+      SplitPCAWGMatrixByTumorType(PCAWG7::exposure$TCGA$SBS96)
+    other.exome.SBS96 <-
+      SplitPCAWGMatrixByTumorType(PCAWG7::exposure$other.exome$SBS96)
+  }
+
+  exposure.stats <- list()
+  exposure.stats$PCAWG$SBS96 <- lapply(PCAWG.SBS96, ExposureStats1TumorType)
+  usethis::use_data(exposure.stats, overwrite = TRUE)
+}
+
+
+if (FALSE) {
+
+    all.types <-
+    lapply(list(PCAWG.SBS96 # ,
+                # other.genome.SBS96,
+                # TCGA.SBS96,
+                #other.exome.SBS96
+                ), names)
 
   all.types <- unique(unlist(all.types))
+}
 
+
+
+if (FALSE) {
   PCAWG.DBS78 <- SplitPCAWGMatrixByTumorType(PCAWG7::exposure$PCAWG$DBS78)
 
   PCAWG.ID <- SplitPCAWGMatrixByTumorType(PCAWG7::exposure$PCAWG$ID)

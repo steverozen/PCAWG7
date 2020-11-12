@@ -1,3 +1,7 @@
+# PCAWG7 0.0.3.9003
+
+* Working toward adding package variable exposure.stats 
+
 # PCAWG7 0.0.3
 * Added package man page.
 * Added more plots to data-raw/plots/
