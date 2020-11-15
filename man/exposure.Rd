@@ -3,7 +3,7 @@
 \docType{data}
 \name{exposure}
 \alias{exposure}
-\title{PCAWG7 SigProfiler assignments (exposures).}
+\title{PCAWG7 SigProfiler signature assignments (numbers of mutations due to each signature in each tumor).}
 \format{
 A list with the elements:
 
@@ -37,12 +37,12 @@ A list with the elements:
 \source{
 Files of \url{https://www.synapse.org/#!Synapse:syn12009743},
   2019 Oct 09, populated by
- \code{data-raw/sig.profiler.exposures/load.package.variable.exposure.R}.
+ \code{data-raw/sig.profiler.sures/load.package.variable.exposure.R}.
 }
 \usage{
 exposure
 }
 \description{
-PCAWG7 SigProfiler assignments (exposures).
+PCAWG7 SigProfiler signature assignments (numbers of mutations due to each signature in each tumor).
 }
 \keyword{datasets}

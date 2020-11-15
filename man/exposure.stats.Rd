@@ -5,15 +5,26 @@
 \alias{exposure.stats}
 \title{Exposure statistics from the PCAWG7 paper}
 \format{
-For initial testing see \code{exposure.stats$PCAWG$SBS96}.
+A list with one element, \code{PCAWG}, which has the sub-elements \code{SBS96}, \code{DBS78},
+\code{ID} with statistics for the corresponding mutation types by cancer type.
+I.e. each element has a sub-element for each cancer type, and this element is a data.frame
+with one row for each signature and
+columns \code{mean.of.those.present} (the mean number of mutations for those tumors that
+have the mutation) and \code{proportion.present} (the proportion of tumors in which the
+signature is present).
 }
 \source{
-Computed from other package variables uisng \code{GatherPCAWG7ExposureStatsSBS96}.
+Computed from other package variables using \code{GatherPCAWG7ExposureStatsSBS96}.
 }
 \usage{
 exposure.stats
 }
 \description{
 Exposure statistics from the PCAWG7 paper
+}
+\examples{
+
+exposure.stats$PCAWG$SBS96$`Biliary-AdenoCA`[1:3, ]
+
 }
 \keyword{datasets}

@@ -6,7 +6,7 @@
 ## Purpose
 
 Contains data from Alexandrov, Kim, Haradhvala, Huang et al.,
-‘Repertoire of Mutational Signatures in Human Cancer’. Please see
+'Repertoire of Mutational Signatures in Human Cancer'. Please see
 `?PCAWG7`. The reference for the data is Alexandrov, L.B., Kim, J.,
 Haradhvala, N.J. et al. The repertoire of mutational signatures in human
 cancer. Nature 578, 94-101 (2020).

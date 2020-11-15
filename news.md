@@ -1,3 +1,7 @@
+# PCAWG7 0.0.3.9004
+
+* Added indels and DBSs to exposure.stats and improved documentation.
+
 # PCAWG7 0.0.3.9003
 
 * Working toward adding package variable exposure.stats 

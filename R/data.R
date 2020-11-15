@@ -47,11 +47,11 @@
 "signature"
 
 
-#' PCAWG7 SigProfiler assignments (exposures).
+#' PCAWG7 SigProfiler signature assignments (numbers of mutations due to each signature in each tumor).
 #'
 #' @source Files of \url{https://www.synapse.org/#!Synapse:syn12009743},
 #'   2019 Oct 09, populated by
-#'  \code{data-raw/sig.profiler.exposures/load.package.variable.exposure.R}.
+#'  \code{data-raw/sig.profiler.sures/load.package.variable.exposure.R}.
 #'
 #' @format
 #'
@@ -129,9 +129,19 @@
 
 #' Exposure statistics from the PCAWG7 paper
 #'
-#' @source Computed from other package variables uisng \code{GatherPCAWG7ExposureStatsSBS96}.
+#' @source Computed from other package variables using \code{GatherPCAWG7ExposureStatsSBS96}.
 #'
-#' @format For initial testing see \code{exposure.stats$PCAWG$SBS96}.
+#' @format A list with one element, \code{PCAWG}, which has the sub-elements \code{SBS96}, \code{DBS78},
+#' \code{ID} with statistics for the corresponding mutation types by cancer type.
+#' I.e. each element has a sub-element for each cancer type, and this element is a data.frame
+#' with one row for each signature and
+#' columns \code{mean.of.those.present} (the mean number of mutations for those tumors that
+#' have the mutation) and \code{proportion.present} (the proportion of tumors in which the
+#' signature is present).
+#'
+#' @examples
+#'
+#' exposure.stats$PCAWG$SBS96$`Biliary-AdenoCA`[1:3, ]
 #'
 #' @name exposure.stats
 "exposure.stats"

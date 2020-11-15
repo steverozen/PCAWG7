@@ -22,7 +22,7 @@ ExposureStats1TumorType <- function(exposure) {
   return(tt)
 }
 
-GatherPCAWG7ExposureStatsSBS96 <- function() {
+GatherPCAWG7ExposureStats <- function() {
   PCAWG.SBS96 <-
     SplitPCAWGMatrixByTumorType(PCAWG7::exposure$PCAWG$SBS96)
 
@@ -35,8 +35,16 @@ GatherPCAWG7ExposureStatsSBS96 <- function() {
       SplitPCAWGMatrixByTumorType(PCAWG7::exposure$other.exome$SBS96)
   }
 
+  PCAWG.DBS78 <- SplitPCAWGMatrixByTumorType(PCAWG7::exposure$PCAWG$DBS78)
+
+  PCAWG.ID <- SplitPCAWGMatrixByTumorType(PCAWG7::exposure$PCAWG$ID)
+
+
   exposure.stats <- list()
   exposure.stats$PCAWG$SBS96 <- lapply(PCAWG.SBS96, ExposureStats1TumorType)
+  exposure.stats$PCAWG$DBS78 <- lapply(PCAWG.DBS78, ExposureStats1TumorType)
+  exposure.stats$PCAWG$ID    <- lapply(PCAWG.ID,    ExposureStats1TumorType)
+
   usethis::use_data(exposure.stats, overwrite = TRUE)
 }
 
@@ -56,9 +64,8 @@ if (FALSE) {
 
 
 if (FALSE) {
-  PCAWG.DBS78 <- SplitPCAWGMatrixByTumorType(PCAWG7::exposure$PCAWG$DBS78)
+  # Maybe add exome info
 
-  PCAWG.ID <- SplitPCAWGMatrixByTumorType(PCAWG7::exposure$PCAWG$ID)
   TCGA.ID  <- SplitPCAWGMatrixByTumorType(PCAWG7::exposure$TCGA$ID)
 
   rr<- sum(ICAMS::all.abundance$BSgenome.Hsapiens.1000genomes.hs37d5$genome$`96`) /
