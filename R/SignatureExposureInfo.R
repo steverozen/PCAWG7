@@ -18,7 +18,7 @@ ExposureStats1TumorType <- function(exposure) {
 
   rownames(tt) <- rownames(exposure)
   colnames(tt) <- c("mean.of.those.present", "proportion.present")
-  tt <- tt[is.present, ]
+  tt <- tt[is.present, , drop = FALSE]
   return(tt)
 }
 
