@@ -3,7 +3,8 @@
 \docType{data}
 \name{COSMIC.v3.1}
 \alias{COSMIC.v3.1}
-\title{COSMIC v3.1 data}
+\title{Mutational signatures data from COSMIC, the Catalogue Of Somatic Mutations In
+Cancer, (v3.1 - June 2020)}
 \format{
 A list with the elements:
 
@@ -32,7 +33,8 @@ Files downloaded from
 COSMIC.v3.1
 }
 \description{
-COSMIC v3.1 data
+Mutational signatures data from COSMIC, the Catalogue Of Somatic Mutations In
+Cancer, (v3.1 - June 2020)
 }
 \section{Remark}{
 

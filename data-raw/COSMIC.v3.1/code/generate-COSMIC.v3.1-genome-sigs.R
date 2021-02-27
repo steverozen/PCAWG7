@@ -125,4 +125,4 @@ COSMIC.v3.1$signature$genome <- list(SBS96 = SBS96.sigs.GRCh37,
                                      SBS192 = SBS192.sigs.GRCh37,
                                      DBS78 = DBS78.sigs.GRCh37,
                                      ID = ID.sigs.GRCh37)
-usethis::use_data(COSMIC.v3.1)
+usethis::use_data(COSMIC.v3.1, overwrite = TRUE)
