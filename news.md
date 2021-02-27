@@ -1,3 +1,8 @@
+# PCAWG7 0.0.3.9006
+
+* Added new exported data `COSMIC.v3.1` which contain the latest signatures from
+COSMIC website.
+
 # PCAWG7 0.0.3.9004
 
 * Added indels and DBSs to exposure.stats and improved documentation.
