@@ -6,7 +6,7 @@
 ## Purpose
 
 Contains data from Alexandrov, Kim, Haradhvala, Huang et al.,
-'Repertoire of Mutational Signatures in Human Cancer'. Please see
+‘Repertoire of Mutational Signatures in Human Cancer’. Please see
 `?PCAWG7`. The reference for the data is Alexandrov, L.B., Kim, J.,
 Haradhvala, N.J. et al. The repertoire of mutational signatures in human
 cancer. Nature 578, 94-101 (2020).
@@ -19,6 +19,12 @@ Cancer Analysis of Whole Genomes (PCAWG) consortium.
 Install PCAWG7 from the master branch on [GitHub](https://github.com/):
 
 ``` r
-install.packages("devtools")
-devtools::install_github("steverozen/PCAWG7")
+if (!requireNamespace("remotes", quietly = TRUE)) {
+  install.packages("remotes")
+}
+remotes::install_github(repo = "steverozen/PCAWG7", ref = "master")
 ```
+
+## Reference manual
+
+<https://github.com/steverozen/PCAWG7/blob/master/data-raw/PCAWG7_0.0.3.9006.pdf>

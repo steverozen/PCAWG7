@@ -31,6 +31,12 @@ Contains data from Alexandrov, Kim, Haradhvala, Huang et al.,
 Install PCAWG7 from the master branch on [GitHub](https://github.com/):
 
 ``` r
-install.packages("devtools")
-devtools::install_github("steverozen/PCAWG7")
+if (!requireNamespace("remotes", quietly = TRUE)) {
+  install.packages("remotes")
+}
+remotes::install_github(repo = "steverozen/PCAWG7", ref = "master")
 ```
+
+## Reference manual
+
+https://github.com/steverozen/PCAWG7/blob/master/data-raw/PCAWG7_0.0.3.9006.pdf
