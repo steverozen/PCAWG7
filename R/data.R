@@ -171,3 +171,26 @@
 
 #' @name PCAWG.sample.id
 "PCAWG.sample.id"
+
+#' List of proposed etiologies from PCAWG7 paper, some manually abbreviated and a few summarized from the COSMIC web site.
+#'
+#' @format
+#'
+#' A list with the elements:
+#'
+#' \describe{
+#'   \item{SBS96}{}
+#'   \item{SBS192}{}
+#'   \item{DBS78}{}
+#'   \item{ID}{}
+#' }
+#'
+#' Each list element is a single column matrix with rownames being the
+#' signature IDs and values being a short character string
+#' description of the
+#' proposed etiology.
+#'
+#' In general use \code{\link{GetEtiology}}, which handles new
+#' signatures without elements in \code{sigs.etiologies}.
+#' @name sigs.etiologies
+"sigs.etiologies"
