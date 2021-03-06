@@ -1,18 +1,3 @@
-#' Single Base Substitution (SBS) spectra in trinucleotide context (deprecated).
-#' Use \code{\link{spectra}$PCAWG$SBS96} instead.
-#'
-#'
-#' @name PCAWG.WGS.SBS.96
-"PCAWG.WGS.SBS.96"
-
-
-#' Doublet Base Substitution (SBS) spectra (deprecated).
-#' Use \code{\link{spectra}$PCAWG$DBS78} instead.
-#'
-#'
-#' @name PCAWG.WGS.DBS
-"PCAWG.WGS.DBS"
-
 #' PCAWG7 SigProfiler reference signatures.
 #'
 #' @source Subdirectories of \url{https://www.synapse.org/#!Synapse:syn12009743},

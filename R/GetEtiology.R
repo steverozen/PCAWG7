@@ -9,7 +9,7 @@
 #' each element of which is the etiology of the
 #' corresponding signature, if known, or else the empty string.
 #'
-#' @example
+#' @examples
 #' GetEtiology("ID", c("ID1", "foo", "ID3"))
 #'
 #' @export

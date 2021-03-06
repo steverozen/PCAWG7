@@ -20,3 +20,7 @@ corresponding signature, if known, or else the empty string.
 \description{
 Get the proposed etiology of a signature
 }
+\examples{
+GetEtiology("ID", c("ID1", "foo", "ID3"))
+
+}
