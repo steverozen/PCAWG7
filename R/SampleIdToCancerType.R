@@ -7,7 +7,9 @@
 #'   only the <cancer.type> strings.
 #'
 #' @export
-
+#'
+#' @examples
+#' cancer.type <- SampleIDToCancerType("Biliary-AdenoCA::SP117655")
 SampleIDToCancerType <- function(PCAWGID) {
   tumor.types <- sapply(
     PCAWGID,

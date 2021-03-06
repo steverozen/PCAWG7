@@ -9,7 +9,7 @@ GetEtiology(mutation.type, sig.id)
 \arguments{
 \item{mutation.type}{character string, one of SBS96, SBS192, DBS78, ID}
 
-\item{sig.id}{character vector with signature sigunature ids, e.g.
+\item{sig.id}{character vector with signature ids, e.g.
 \code{c("SBS3", "foo")}.}
 }
 \value{
@@ -19,4 +19,8 @@ corresponding signature, if known, or else the empty string.
 }
 \description{
 Get the proposed etiology of a signature
+}
+\examples{
+GetEtiology("ID", c("ID1", "foo", "ID3"))
+
 }

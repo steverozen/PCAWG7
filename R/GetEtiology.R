@@ -2,19 +2,17 @@
 #'
 #' @param mutation.type character string, one of SBS96, SBS192, DBS78, ID
 #'
-#' @param sig.id character vector with signature sigunature ids, e.g.
+#' @param sig.id character vector with signature ids, e.g.
 #'    \code{c("SBS3", "foo")}.
 #'
 #' @return A character vector of the same length as \code{sig.id},
 #' each element of which is the etiology of the
 #' corresponding signature, if known, or else the empty string.
 #'
-#' @example
+#' @examples
 #' GetEtiology("ID", c("ID1", "foo", "ID3"))
 #'
 #' @export
-
-
 GetEtiology <- function(mutation.type, sig.id) {
   legal <- c("SBS96", "SBS192", "DBS78", "ID")
   if (!mutation.type %in% legal) {

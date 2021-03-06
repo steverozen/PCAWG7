@@ -38,4 +38,7 @@ signature
 \description{
 PCAWG7 SigProfiler reference signatures.
 }
+\examples{
+SBS96.sigs <- signature$genome$SBS96
+}
 \keyword{datasets}

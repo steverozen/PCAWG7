@@ -1,3 +1,9 @@
+# PCAWG7 0.0.3.9007
+
+* Added examples and tests for exported functions and data.
+
+* Updated function `SplitMatrixBySampleType`.
+
 # PCAWG7 0.0.3.9006
 
 * Added new exported data `COSMIC.v3.1` which contain the latest signatures from

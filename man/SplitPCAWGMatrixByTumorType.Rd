@@ -21,3 +21,6 @@ Invisibly, the list of exposure matrices created by splitting
 \description{
 Extract tumor type from column names and return the input matrix split by tumor type.
 }
+\examples{
+spectra.list <- SplitPCAWGMatrixByTumorType(spectra$PCAWG$SBS96)
+}

@@ -29,4 +29,7 @@
 #' The signatures are all from Human GRCh37 reference genome.
 #'
 #' @name COSMIC.v3.1
+#'
+#' @examples
+#' SBS96.sigs <- COSMIC.v3.1$signature$genome$SBS96
 "COSMIC.v3.1"
