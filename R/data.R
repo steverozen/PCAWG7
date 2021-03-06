@@ -1,37 +1,3 @@
-#' PCAWG7 SigProfiler reference signatures.
-#'
-#' @source Subdirectories of \url{https://www.synapse.org/#!Synapse:syn12009743},
-#'  2019 Oct 09, populated by
-#'  \code{data-raw/populate.variable.siganture.R}.
-#'
-#' @format
-#'
-#' A list with the elements:
-#'
-#' \describe{
-#'   \item{genome}{A list with the elements:
-#'
-#'   \describe{
-#'     \item{SBS96}{Strand-agnostic single-base substitutions in trinucleotide context.}
-#'     \item{SBS192}{Transcriptionally stranded single-base substitutions in trinucleotide context.}
-#'     \item{DBS78}{Strand-agnostic doublet-base substitutions.}
-#'     \item{ID}{Strand-agnostic indels.}
-#'   }}
-#'
-#'   \item{exome}{A list with the elements:
-#'
-#'   \describe{
-#'     \item{SBS96}{As above, for exome count signatures, which look
-#'           different than genome count signatures, because of
-#'           differences in trinucleotide frequencies in exomes versus
-#'           whole genomes.}
-#'  }}
-#' }
-#'
-#' @name signature
-"signature"
-
-
 #' PCAWG7 SigProfiler signature assignments (numbers of mutations due to each signature in each tumor).
 #'
 #' @source Files of \url{https://www.synapse.org/#!Synapse:syn12009743},

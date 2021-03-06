@@ -119,10 +119,12 @@ testthat::expect_equivalent(ID.sigs.GRCh37[, 1:17, drop = FALSE],
                             PCAWG7::signature$genome$ID)
 
 # Put all the signatures inside a list
-COSMIC.v3.1 <- list()
+signature <- list()
 
-COSMIC.v3.1$signature$genome <- list(SBS96 = SBS96.sigs.GRCh37,
+signature$genome <- list(SBS96 = SBS96.sigs.GRCh37,
                                      SBS192 = SBS192.sigs.GRCh37,
                                      DBS78 = DBS78.sigs.GRCh37,
                                      ID = ID.sigs.GRCh37)
-usethis::use_data(COSMIC.v3.1, overwrite = TRUE)
+
+
+usethis::use_data(signature, overwrite = TRUE)

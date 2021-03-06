@@ -10,8 +10,6 @@
 #'
 #' A list with the elements:
 #'
-#' \describe{
-#'   \item{signature}{A list with the elements:
 #'   \describe{
 #'   \item{genome}{A list with the elements:
 #'
@@ -21,12 +19,12 @@
 #'     \item{DBS78}{Strand-agnostic doublet-base substitutions.}
 #'     \item{ID}{Strand-agnostic indels.}
 #'    }
-#'  }
+#
 #'  }
 #' }}
 #'
 #' @section Remark:
 #' The signatures are all from Human GRCh37 reference genome.
 #'
-#' @name COSMIC.v3.1
-"COSMIC.v3.1"
+#' @name signature
+"signature"

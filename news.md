@@ -1,3 +1,9 @@
+# PCAWG7 0.1.0.9000
+
+* Non-backward-compatible: Removed package variables PCAWG.WGS.SBS.96 and PCAWG.WGS.DBS.
+* Non-backward-compatible: made former COSMIC.v3.1$signature into signature,
+   and made former signature into COSMIC.v3.0$signature
+
 # PCAWG7 0.0.3.9006
 
 * Added new exported data `COSMIC.v3.1` which contain the latest signatures from
