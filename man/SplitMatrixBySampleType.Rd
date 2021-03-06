@@ -18,9 +18,15 @@ signature or mutation type in a single sample.}
 of which indicates a particular sample type.}
 }
 \value{
-Invisibly, the list of exposure matrices created by splitting
+Invisibly, the list of matrices created by splitting
   \code{M} by \code{sample.type}.
 }
 \description{
 Split an exposure matrix or spectrum matrix into a list of matrices, each for a single tumor type.
+}
+\examples{
+ spectra.list <- SplitMatrixBySampleType(M = spectra$PCAWG$SBS96,
+                                         sample.type = c("Biliary-AdenoCA",
+                                                         "Bladder-TCC"))
+
 }

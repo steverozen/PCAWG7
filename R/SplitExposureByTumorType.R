@@ -5,16 +5,32 @@
 #' @param sample.type A character or numeric vector, each element
 #'   of which indicates a particular sample type.
 #'
-#' @return Invisibly, the list of exposure matrices created by splitting
+#' @return Invisibly, the list of matrices created by splitting
 #'   \code{M} by \code{sample.type}.
 #'
 #' @export
 #'
+#' @examples
+#'  spectra.list <- SplitMatrixBySampleType(M = spectra$PCAWG$SBS96,
+#'                                          sample.type = c("Biliary-AdenoCA",
+#'                                                          "Bladder-TCC"))
+#'
 SplitMatrixBySampleType <- function(M, sample.type) {
-  tt <- t(M)
-  split.tt <- split(as.data.frame(tt), sample.type)
-  rr <- lapply(split.tt, t)
-  invisible(return(rr))
+  #tt <- t(M)
+  #split.tt <- split(as.data.frame(tt), sample.type)
+  #rr <- lapply(split.tt, t)
+  #invisible(return(rr))
+
+  indices <- lapply(sample.type, FUN = function(x) {
+    return(grep(x, colnames(M)))
+  })
+
+  out <- lapply(indices, FUN = function(x) {
+    return(M[, x, drop = FALSE])
+  })
+
+  names(out) <- sample.type
+  return(out)
 }
 
 #' Extract tumor type from column names and return the input matrix split by tumor type.
@@ -31,7 +47,9 @@ SplitMatrixBySampleType <- function(M, sample.type) {
 #'
 #' @export
 #'
+#' @examples
+#' spectra.list <- SplitPCAWGMatrixByTumorType(spectra$PCAWG$SBS96)
 SplitPCAWGMatrixByTumorType <- function(M) {
-  tumor.type <-  PCAWG7::SampleIDToCancerType(colnames(M))
+  tumor.type <-  unique(PCAWG7::SampleIDToCancerType(colnames(M)))
   invisible(return(SplitMatrixBySampleType(M, tumor.type)))
 }
