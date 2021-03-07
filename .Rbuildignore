@@ -5,3 +5,4 @@
 ^news\.md$
 ^.travis\.yml$
 ^PCAWG7_.*\.pdf$
+^\.github$
