@@ -1,3 +1,6 @@
+# PCAWG7 0.1.0.9002
+* Added more examples and tests for exported data and functions
+
 # PCAWG7 0.1.0.9001
 
 * Adapted SplitMatrixBySampleType to work with ICAMS catalogs and added tests
