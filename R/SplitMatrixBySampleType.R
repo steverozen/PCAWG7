@@ -42,7 +42,7 @@ SplitMatrixBySampleType <- function(M, sample.type) {
                      abundance    = M.abundance))
                  })
   }
-  invisible(return(rr))
+  return(rr)
 }
 
 #' Extract tumor type from column names and return the input matrix split by tumor type.
@@ -57,9 +57,13 @@ SplitMatrixBySampleType <- function(M, sample.type) {
 #'   The column names must be of the the form
 #'   <cancer.type>::<sample.ID>.
 #'
-#' @return Invisibly, the list of exposure matrices or
+#' @return The list of exposure matrices or
 #'    \code{\link[ICAMS]{ICAMS}} catalogs created by splitting
 #'   \code{matrix} by the tumor type encoded in the column names.
+#'
+#' @examples
+#' mm <- SplitPCAWGMatrixByTumorType(spectra$PCAWG$DBS78)
+#' mm[[3]][1:4, 1:5]
 #'
 #' @export
 #'

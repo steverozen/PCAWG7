@@ -18,10 +18,15 @@ The column names must be of the the form
 <cancer.type>::<sample.ID>.}
 }
 \value{
-Invisibly, the list of exposure matrices or
+The list of exposure matrices or
    \code{\link[ICAMS]{ICAMS}} catalogs created by splitting
   \code{matrix} by the tumor type encoded in the column names.
 }
 \description{
 Extract tumor type from column names and return the input matrix split by tumor type.
+}
+\examples{
+mm <- SplitPCAWGMatrixByTumorType(spectra$PCAWG$DBS78)
+mm[[3]][1:4, 1:5]
+
 }
