@@ -16,3 +16,7 @@ Character vector of corresponding SBS192 signature IDs; some
 \description{
 Translate SBS96 signature IDs to SBS192 signature IDs by adding "-E" if necessary.
 }
+\examples{
+SBS96.ids <- c("SBS1", "SBS23", "SBS25")
+SBS192.ids <- SBS96_ID_to_SBS192_ID(SBS96.ids)
+}

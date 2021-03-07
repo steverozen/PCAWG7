@@ -19,4 +19,7 @@
 #' The signatures are all from Human GRCh37 reference genome.
 #'
 #' @name signature
+#'
+#' @examples
+#' SBS96.sigs <- signature$genome$SBS96
 "signature"

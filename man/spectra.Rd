@@ -44,4 +44,7 @@ spectra
 \description{
 PCAWG7 mutational spectra (catalogs).
 }
+\examples{
+SBS96.spectra <- spectra$PCAWG$SBS96
+}
 \keyword{datasets}

@@ -17,3 +17,6 @@ A character vector parallel to \code{PCAWGID} containing
 \description{
 Split out the cancer type from the sample ID for PCAWG IDs
 }
+\examples{
+cancer.type <- SampleIDToCancerType("Biliary-AdenoCA::SP117655")
+}

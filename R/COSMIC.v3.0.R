@@ -33,4 +33,7 @@
 #' }
 #'
 #' @name COSMIC.v3.0
+#'
+#' @examples
+#' SBS96.sigs <- COSMIC.v3.0$signature$genome$SBS96
 "COSMIC.v3.0"

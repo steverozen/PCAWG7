@@ -33,4 +33,7 @@ Cancer, (v3.1 - June 2020)
 The signatures are all from Human GRCh37 reference genome.
 }
 
+\examples{
+SBS96.sigs <- signature$genome$SBS96
+}
 \keyword{datasets}

@@ -36,6 +36,9 @@
 #' }
 #'
 #' @name exposure
+#'
+#' @examples
+#' SBS96.exposure <- exposure$PCAWG$SBS96
 "exposure"
 
 
@@ -76,6 +79,9 @@
 #' }
 #'
 #' @name spectra
+#'
+#' @examples
+#' SBS96.spectra <- spectra$PCAWG$SBS96
 "spectra"
 
 #' Exposure statistics from the PCAWG7 paper

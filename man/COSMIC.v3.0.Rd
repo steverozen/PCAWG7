@@ -42,4 +42,7 @@ COSMIC.v3.0
 \description{
 PCAWG7 SigProfiler reference signatures.
 }
+\examples{
+SBS96.sigs <- COSMIC.v3.0$signature$genome$SBS96
+}
 \keyword{datasets}

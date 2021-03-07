@@ -45,4 +45,7 @@ exposure
 \description{
 PCAWG7 SigProfiler signature assignments (numbers of mutations due to each signature in each tumor).
 }
+\examples{
+SBS96.exposure <- exposure$PCAWG$SBS96
+}
 \keyword{datasets}
