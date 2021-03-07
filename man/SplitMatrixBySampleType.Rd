@@ -29,6 +29,7 @@ Split an exposure matrix or spectrum matrix into a list of matrices, each for a 
 \examples{
 ff <- matrix(1, nrow=3, ncol = 2)
 colnames(ff) <- c("sample1", "sample2")
-SplitMatrixBySampleType(ff, c("sample.type.x", "sample.type.y"))
+xx <- SplitMatrixBySampleType(ff, c("sample.type.x", "sample.type.y"))
+xx
 
 }

@@ -16,9 +16,10 @@
 #'   \code{M} by \code{sample.type}.
 #'
 #' @examples
-#'ff <- matrix(1, nrow=3, ncol = 2)
+#' ff <- matrix(1, nrow=3, ncol = 2)
 #' colnames(ff) <- c("sample1", "sample2")
-#' SplitMatrixBySampleType(ff, c("sample.type.x", "sample.type.y"))
+#' xx <- SplitMatrixBySampleType(ff, c("sample.type.x", "sample.type.y"))
+#' xx
 #'
 #' @export
 #'
@@ -42,7 +43,7 @@ SplitMatrixBySampleType <- function(M, sample.type) {
                      abundance    = M.abundance))
                  })
   }
-  return(rr)
+  invisible(rr)
 }
 
 #' Extract tumor type from column names and return the input matrix split by tumor type.
@@ -57,7 +58,7 @@ SplitMatrixBySampleType <- function(M, sample.type) {
 #'   The column names must be of the the form
 #'   <cancer.type>::<sample.ID>.
 #'
-#' @return The list of exposure matrices or
+#' @return Invisibly, the list of exposure matrices or
 #'    \code{\link[ICAMS]{ICAMS}} catalogs created by splitting
 #'   \code{matrix} by the tumor type encoded in the column names.
 #'
@@ -69,5 +70,5 @@ SplitMatrixBySampleType <- function(M, sample.type) {
 #'
 SplitPCAWGMatrixByTumorType <- function(M) {
   tumor.type <-  PCAWG7::SampleIDToCancerType(colnames(M))
-  invisible(return(SplitMatrixBySampleType(M, tumor.type)))
+  invisible(SplitMatrixBySampleType(M, tumor.type))
 }

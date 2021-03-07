@@ -18,7 +18,7 @@ The column names must be of the the form
 <cancer.type>::<sample.ID>.}
 }
 \value{
-The list of exposure matrices or
+Invisibly, the list of exposure matrices or
    \code{\link[ICAMS]{ICAMS}} catalogs created by splitting
   \code{matrix} by the tumor type encoded in the column names.
 }
