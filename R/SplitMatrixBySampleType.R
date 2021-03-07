@@ -1,6 +1,12 @@
 #' Split an exposure matrix or spectrum matrix into a list of matrices, each for a single tumor type.
 #'
-#' @inheritParams SplitPCAWGMatrixByTumorType
+#' @param M A numerical matrix or data frame or
+#'   \code{\link[ICAMS]{ICAMS}} catalog in which
+#'   columns are samples (e.g. tumors) and rows are either
+#'   mutational signatures (for exposures) or mutation types (for
+#'   spectra), and, each element is the number of mutations due
+#'   to a given mutational
+#'   signature or mutation type in a single sampl
 #'
 #' @param sample.type A character or numeric vector, each element
 #'   of which indicates a particular sample type.
@@ -8,6 +14,11 @@
 #' @return Invisibly, the list of exposure or spectrum
 #'   matrices created by splitting
 #'   \code{M} by \code{sample.type}.
+#'
+#' @examples
+#'ff <- matrix(1, nrow=3, ncol = 2)
+#' colnames(ff) <- c("sample1", "sample2")
+#' SplitMatrixBySampleType(ff, c("sample.type.x", "sample.type.y"))
 #'
 #' @export
 #'
@@ -36,14 +47,18 @@ SplitMatrixBySampleType <- function(M, sample.type) {
 
 #' Extract tumor type from column names and return the input matrix split by tumor type.
 #'
-#' @param M A numerical matrix or data frame in which
+#' @param M A numerical matrix or data frame or
+#'   \code{\link[ICAMS]{ICAMS}} catalog in which
 #'   columns are samples (e.g. tumors) and rows are either
 #'   mutational signatures (for exposures) or mutation types (for
-#'   spectra), and, each element is the number of mutations due
+#'   spectra), and each element is the number of mutations due
 #'   to a given mutational
 #'   signature or mutation type in a single sample.
+#'   The column names must be of the the form
+#'   <cancer.type>::<sample.ID>.
 #'
-#' @return Invisibly, the list of exposure matrices created by splitting
+#' @return Invisibly, the list of exposure matrices or
+#'    \code{\link[ICAMS]{ICAMS}} catalogs created by splitting
 #'   \code{matrix} by the tumor type encoded in the column names.
 #'
 #' @export
