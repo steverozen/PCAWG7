@@ -1,6 +1,6 @@
 # PCAWG7 0.1.0.9001
 
-* Adpated SplitMatrixBySampleType to work with ICAMS catalogs and added tests
+* Adapted SplitMatrixBySampleType to work with ICAMS catalogs and added tests
 * Made ICAMS an Imports (because needed for the classes of the spectra and 
    signature package variables)
 

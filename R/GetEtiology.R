@@ -2,7 +2,7 @@
 #'
 #' @param mutation.type character string, one of SBS96, SBS192, DBS78, ID
 #'
-#' @param sig.id character vector with signature sigunature ids, e.g.
+#' @param sig.id character vector with signature signature ids, e.g.
 #'    \code{c("SBS3", "foo")}.
 #'
 #' @return A character vector of the same length as \code{sig.id},

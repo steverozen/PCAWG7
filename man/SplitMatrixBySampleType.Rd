@@ -13,7 +13,7 @@ columns are samples (e.g. tumors) and rows are either
 mutational signatures (for exposures) or mutation types (for
 spectra), and, each element is the number of mutations due
 to a given mutational
-signature or mutation type in a single sampl}
+signature or mutation type in a single sample}
 
 \item{sample.type}{A character or numeric vector, each element
 of which indicates a particular sample type.}

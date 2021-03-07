@@ -9,7 +9,7 @@ GetEtiology(mutation.type, sig.id)
 \arguments{
 \item{mutation.type}{character string, one of SBS96, SBS192, DBS78, ID}
 
-\item{sig.id}{character vector with signature sigunature ids, e.g.
+\item{sig.id}{character vector with signature signature ids, e.g.
 \code{c("SBS3", "foo")}.}
 }
 \value{
