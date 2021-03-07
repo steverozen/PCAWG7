@@ -5,7 +5,8 @@
 #' @param sample.type A character or numeric vector, each element
 #'   of which indicates a particular sample type.
 #'
-#' @return Invisibly, the list of exposure matrices created by splitting
+#' @return Invisibly, the list of exposure or spectrum
+#'   matrices created by splitting
 #'   \code{M} by \code{sample.type}.
 #'
 #' @export

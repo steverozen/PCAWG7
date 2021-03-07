@@ -18,7 +18,8 @@ signature or mutation type in a single sample.}
 of which indicates a particular sample type.}
 }
 \value{
-Invisibly, the list of exposure matrices created by splitting
+Invisibly, the list of exposure or spectrum
+  matrices created by splitting
   \code{M} by \code{sample.type}.
 }
 \description{
