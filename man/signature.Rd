@@ -6,7 +6,14 @@
 \title{Mutational signatures data from COSMIC, the Catalogue Of Somatic Mutations In
 Cancer, (v3.1 - June 2020)}
 \format{
-
+A list with a single element, \code{genome}, which is a
+  list containing:
+  \describe{
+    \item{SBS96}{Strand-agnostic single-base substitutions in trinucleotide context.}
+    \item{SBS192}{Transcriptionally stranded single-base substitutions in trinucleotide context.}
+    \item{DBS78}{Strand-agnostic doublet-base substitutions.}
+    \item{ID}{Strand-agnostic indels.}
+  }
 }
 \source{
 Files downloaded from

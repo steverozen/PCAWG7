@@ -1,6 +1,6 @@
 Package: PCAWG7
 Title: Repository of data from COSMIC and 'The repertoire of Mutational Signatures in Human Cancer'
-Version: 0.1.0.9000
+Version: 0.1.0.9001
 Authors@R: 
     person(given = "Steven G.",
            family = "Rozen",
@@ -24,5 +24,9 @@ Depends: R (>= 3.5),
 RoxygenNote: 7.1.1
 URL: https://github.com/steverozen/PCAWG7
 BugReports: https://github.com/steverozen/PCAWG7/issues
-Suggests: ICAMS,
-  usethis
+Imports: ICAMS (>= 2.3.5.9002)
+Remotes: github::steverozen/ICAMS@master
+Suggests: 
+    usethis,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
