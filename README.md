@@ -3,15 +3,6 @@
 
 # PCAWG7
 
-<!-- badges: start -->
-
-[![R build
-status](https://github.com/steverozen/PCAWG7/workflows/R-CMD-check/badge.svg)](https://github.com/steverozen/PCAWG7/actions)
-[![License: GPL
-v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-
-<!-- badges: end -->
-
 ## Purpose
 
 Contains data from The COSMIC web site
