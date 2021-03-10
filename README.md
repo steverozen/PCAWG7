@@ -3,6 +3,15 @@
 
 # PCAWG7
 
+<!-- badges: start -->
+
+[![R build
+status](https://github.com/steverozen/PCAWG7/workflows/R-CMD-check/badge.svg)](https://github.com/steverozen/PCAWG7/actions)
+[![License: GPL
+v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+<!-- badges: end -->
+
 ## Purpose
 
 Contains data from The COSMIC web site
@@ -27,4 +36,4 @@ remotes::install_github(repo = "steverozen/PCAWG7", ref = "master")
 
 ## Reference manual
 
-<https://github.com/steverozen/PCAWG7/blob/master/data-raw/PCAWG7_0.1.0.9002.pdf>
+<https://github.com/steverozen/PCAWG7/blob/master/data-raw/PCAWG7_0.1.0.9003.pdf>

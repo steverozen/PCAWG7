@@ -1,3 +1,6 @@
+# PCAWG7 0.1.0.9003
+* Added new exported function `CancerTypes` for returning a character vector of some common cancer types
+
 # PCAWG7 0.1.0.9002
 * Added more examples and tests for exported data and functions
 
