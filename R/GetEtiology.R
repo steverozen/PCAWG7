@@ -10,10 +10,9 @@
 #' corresponding signature, if known, or else the empty string.
 #'
 #' @examples
-#' GetEtiology("ID", c("ID1", "foo", "ID3"))
+#' GetEtiology(mutation.type = "ID", sig.id = c("ID1", "foo", "ID3"))
 #'
 #' @export
-
 
 GetEtiology <- function(mutation.type, sig.id) {
   legal <- c("SBS96", "SBS192", "DBS78", "ID")

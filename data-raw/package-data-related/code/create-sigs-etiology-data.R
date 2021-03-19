@@ -1,4 +1,4 @@
-# Source this file from mSigAct package root
+# Source this file from PCAWG7 package root
 
 cat(getwd(), "\n")
 
