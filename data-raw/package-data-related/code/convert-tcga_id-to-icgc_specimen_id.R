@@ -9,16 +9,16 @@ colnames(tcga.uuid.dt) <- c("cancer_type", "sample_info", "submitter_specimen_id
 pcawg.uuid.file <- "data-raw/pcawg_sample_sheet.v1.4.2016-09-14.tsv"
 pcawg.uuid.dt <- data.table::fread(pcawg.uuid.file)
 
-merged.dt <- dplyr::full_join(pcawg.uuid.dt, tcga.uuid.dt, by = "submitter_specimen_id")
+merged.dt <- dplyr::inner_join(pcawg.uuid.dt, tcga.uuid.dt, by = "submitter_specimen_id")
 print(object.size(merged.dt), units = "auto")
 
-# Only keep three columns "tcga_id", "submitter_specimen_id" and "icgc_specimen_id"
-useful.column.names <- c("tcga_id", "submitter_specimen_id", "icgc_specimen_id")
-useful.dt <- merged.dt[, ..useful.column.names]
-print(object.size(useful.dt), units = "auto")
+# Only keep three columns "tcga_id", "submitter_specimen_id",
+# "icgc_specimen_id", "dcc_specimen_type"
+needed.column.names <-
+  c("tcga_id", "submitter_specimen_id", "icgc_specimen_id", "dcc_specimen_type")
+needed.dt <- merged.dt[, ..needed.column.names]
 
-# Discard rows with NA values for "icgc_specimen_id"
-TCGA.ICGC.IDs <- na.omit(useful.dt, cols = "icgc_specimen_id")
+# Keep only tumour samples
+tumour.indices <- grep("tumour", needed.dt$dcc_specimen_type)
+TCGA.ICGC.IDs <- needed.dt[tumour.indices,]
 print(object.size(TCGA.ICGC.IDs), units = "auto")
-
-usethis::use_data(TCGA.ICGC.IDs)
