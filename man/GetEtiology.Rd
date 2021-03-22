@@ -21,6 +21,6 @@ corresponding signature, if known, or else the empty string.
 Get the proposed etiology of a signature
 }
 \examples{
-GetEtiology("ID", c("ID1", "foo", "ID3"))
+GetEtiology(mutation.type = "ID", sig.id = c("ID1", "foo", "ID3"))
 
 }

@@ -46,4 +46,4 @@ remotes::install_github(repo = "steverozen/PCAWG7", ref = "master")
 
 ## Reference manual
 
-https://github.com/steverozen/PCAWG7/blob/master/data-raw/PCAWG7_0.1.0.9003.pdf
+https://github.com/steverozen/PCAWG7/blob/master/data-raw/PCAWG7_0.1.0.9004.pdf

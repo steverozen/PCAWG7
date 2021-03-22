@@ -1,3 +1,9 @@
+# PCAWG7 0.1.0.9004
+* Added new exported function `TCGA_ID_to_ICGC_ID` to translate TCGA(The Cancer
+Genome Atlas) IDs to ICGC(International Cancer Genome Consor- tium) IDs
+
+* Added internal data `TCGA.ICGC.IDs`
+
 # PCAWG7 0.1.0.9003
 * Added new exported function `CancerTypes` for returning a character vector of some common cancer types
 
