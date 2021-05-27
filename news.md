@@ -1,3 +1,6 @@
+# PCAWG7 0.1.0.9005
+* Removed "SBS84" "SBS85" "SBS86" "SBS87" "SBS89" from internal data `sigs.etiologies$SBS192`
+
 # PCAWG7 0.1.0.9004
 * Added new exported function `TCGA_ID_to_ICGC_ID` to translate TCGA(The Cancer
 Genome Atlas) IDs to ICGC(International Cancer Genome Consor- tium) IDs

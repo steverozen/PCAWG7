@@ -10,9 +10,11 @@ sigs.etiologies.SBS96 <-
 
 tmp.SBS192 <-
   data.table::fread("data-raw/package-data-related/source-files/COSMIC-v3-SBS-proposed-aetiology-short-form.csv")
+# "SBS84" "SBS85" "SBS86" "SBS87" "SBS89" do not have SBS192 signature
+tmp2.SBS192 <- tmp.SBS192[!name %in% c("SBS84", "SBS85", "SBS86", "SBS87", "SBS89"), ]
 sigs.etiologies.SBS192 <-
-  matrix(tmp.SBS192$proposed.aetiology, ncol = 1,
-         dimnames = list(SBS96_ID_to_SBS192_ID(tmp.SBS96$name), "proposed.etiology"))
+  matrix(tmp2.SBS192$proposed.aetiology, ncol = 1,
+         dimnames = list(SBS96_ID_to_SBS192_ID(tmp2.SBS192$name), "proposed.etiology"))
 
 tmp.DBS78 <-
   data.table::fread("data-raw/package-data-related/source-files/COSMIC-v3-DBS-proposed-aetiology-short-form.csv")
