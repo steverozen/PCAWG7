@@ -4,7 +4,7 @@ SBS2,APOBEC activity
 SBS3,Defective HR DNA repair; BRCA1/2 mutation
 SBS4,Tobacco smoking
 SBS5,
-SBS6,Defective DNA mimatch repair
+SBS6,Defective DNA mismatch repair
 SBS7a,Ultraviolet light exposure
 SBS7b,Ultraviolet light exposure
 SBS7c,Ultraviolet light exposure
@@ -47,7 +47,7 @@ SBS40,
 SBS41,
 SBS42,Haloalkane exposure
 SBS43,Possible sequencing artefacts
-SBS44,Defective DNA mimatch repair
+SBS44,Defective DNA mismatch repair
 SBS45,Possible sequencing artefacts
 SBS46,Possible sequencing artefacts
 SBS47,Possible sequencing artefacts
