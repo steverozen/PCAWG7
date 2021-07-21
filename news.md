@@ -1,4 +1,8 @@
 # PCAWG7 0.1.0.9006
+* Added new internal data `hdpx.sigs.etiologies.ID` for function `GetEtiology`
+to return the etiology of hdpx ID signatures.
+
+# PCAWG7 0.1.0.9006
 * Corrected typos in data `sigs.etiologies` for SBS6 and SBS44.
 
 # PCAWG7 0.1.0.9005

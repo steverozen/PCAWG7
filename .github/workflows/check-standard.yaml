@@ -5,10 +5,12 @@ on:
     branches:
       - main
       - master
+      - for-hdpx
   pull_request:
     branches:
       - main
       - master
+      - for-hdpx
 
 name: R-CMD-check
 

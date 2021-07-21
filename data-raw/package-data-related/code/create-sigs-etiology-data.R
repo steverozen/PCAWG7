@@ -32,3 +32,9 @@ sigs.etiologies <- list(SBS96 = sigs.etiologies.SBS96,
                         SBS192 = sigs.etiologies.SBS192,
                         DBS78 = sigs.etiologies.DBS78,
                         ID = sigs.etiologies.ID)
+
+tmp.ID2 <-
+  data.table::fread("data-raw/package-data-related/source-files/hdpx.ID.sig.etiologies.csv")
+hdpx.sigs.etiologies.ID <-
+  matrix(tmp.ID2$proposed.aetiology, ncol = 1,
+         dimnames = list(tmp.ID2$name, "proposed.etiology"))

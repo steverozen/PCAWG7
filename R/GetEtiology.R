@@ -20,7 +20,14 @@ GetEtiology <- function(mutation.type, sig.id) {
     stop("GetEtiology: mutation.type must be one of ",
          paste(legal, collapse = ""))
   }
-  mm <- sigs.etiologies[[mutation.type]]
+
+  if (mutation.type == "ID") {
+    mm <- rbind(sigs.etiologies[["ID"]],
+                hdpx.sigs.etiologies.ID)
+  } else {
+    mm <- sigs.etiologies[[mutation.type]]
+  }
+
   rr <- sapply(sig.id,
                function(one.id) {
                  if (one.id %in% rownames(mm)) {
