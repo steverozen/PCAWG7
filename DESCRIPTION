@@ -1,6 +1,6 @@
 Package: PCAWG7
 Title: Repository of data from COSMIC and 'The repertoire of Mutational Signatures in Human Cancer'
-Version: 0.1.0.9007
+Version: 0.1.0.9008
 Authors@R: 
     person(given = "Steven G.",
            family = "Rozen",

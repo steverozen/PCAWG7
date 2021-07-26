@@ -35,6 +35,9 @@ sigs.etiologies <- list(SBS96 = sigs.etiologies.SBS96,
 
 tmp.ID2 <-
   data.table::fread("data-raw/package-data-related/source-files/hdpx.ID.sig.etiologies.csv")
+tmp.ID3 <- tmp.ID2
+tmp.ID3$name <- paste0("H", 1:nrow(tmp.ID3))
+tmp.ID4 <- rbind(tmp.ID2, tmp.ID3)
 hdpx.sigs.etiologies.ID <-
-  matrix(tmp.ID2$proposed.aetiology, ncol = 1,
-         dimnames = list(tmp.ID2$name, "proposed.etiology"))
+  matrix(tmp.ID4$proposed.aetiology, ncol = 1,
+         dimnames = list(tmp.ID4$name, "proposed.etiology"))

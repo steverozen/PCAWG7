@@ -1,4 +1,8 @@
-# PCAWG7 0.1.0.9006
+# PCAWG7 0.1.0.9008
+* Updated internal data `hdpx.sigs.etiologies.ID` for function `GetEtiology`
+to return the etiology of hdpx ID signatures.
+
+# PCAWG7 0.1.0.9007
 * Added new internal data `hdpx.sigs.etiologies.ID` for function `GetEtiology`
 to return the etiology of hdpx ID signatures.
 
