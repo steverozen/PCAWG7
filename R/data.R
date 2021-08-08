@@ -1,52 +1,3 @@
-#' Single Base Substitution (SBS) spectra in trinucleotide context (deprecated).
-#' Use \code{\link{spectra}$PCAWG$SBS96} instead.
-#'
-#'
-#' @name PCAWG.WGS.SBS.96
-"PCAWG.WGS.SBS.96"
-
-
-#' Doublet Base Substitution (SBS) spectra (deprecated).
-#' Use \code{\link{spectra}$PCAWG$DBS78} instead.
-#'
-#'
-#' @name PCAWG.WGS.DBS
-"PCAWG.WGS.DBS"
-
-#' PCAWG7 SigProfiler reference signatures.
-#'
-#' @source Subdirectories of \url{https://www.synapse.org/#!Synapse:syn12009743},
-#'  2019 Oct 09, populated by
-#'  \code{data-raw/populate.variable.siganture.R}.
-#'
-#' @format
-#'
-#' A list with the elements:
-#'
-#' \describe{
-#'   \item{genome}{A list with the elements:
-#'
-#'   \describe{
-#'     \item{SBS96}{Strand-agnostic single-base substitutions in trinucleotide context.}
-#'     \item{SBS192}{Transcriptionally stranded single-base substitutions in trinucleotide context.}
-#'     \item{DBS78}{Strand-agnostic doublet-base substitutions.}
-#'     \item{ID}{Strand-agnostic indels.}
-#'   }}
-#'
-#'   \item{exome}{A list with the elements:
-#'
-#'   \describe{
-#'     \item{SBS96}{As above, for exome count signatures, which look
-#'           different than genome count signatures, because of
-#'           differences in trinucleotide frequencies in exomes versus
-#'           whole genomes.}
-#'  }}
-#' }
-#'
-#' @name signature
-"signature"
-
-
 #' PCAWG7 SigProfiler signature assignments (numbers of mutations due to each signature in each tumor).
 #'
 #' @source Files of \url{https://www.synapse.org/#!Synapse:syn12009743},
@@ -85,6 +36,9 @@
 #' }
 #'
 #' @name exposure
+#'
+#' @examples
+#' SBS96.exposure <- exposure$PCAWG$SBS96
 "exposure"
 
 
@@ -125,6 +79,9 @@
 #' }
 #'
 #' @name spectra
+#'
+#' @examples
+#' SBS96.spectra <- spectra$PCAWG$SBS96
 "spectra"
 
 #' Exposure statistics from the PCAWG7 paper
@@ -171,3 +128,26 @@
 
 #' @name PCAWG.sample.id
 "PCAWG.sample.id"
+
+#' List of proposed etiologies from PCAWG7 paper, some manually abbreviated and a few summarized from the COSMIC web site.
+#'
+#' @format
+#'
+#' A list with the elements:
+#'
+#' \describe{
+#'   \item{SBS96}{}
+#'   \item{SBS192}{}
+#'   \item{DBS78}{}
+#'   \item{ID}{}
+#' }
+#'
+#' Each list element is a single column matrix with rownames being the
+#' signature IDs and values being a short character string
+#' description of the
+#' proposed etiology.
+#'
+#' In general use \code{\link{GetEtiology}}, which handles new
+#' signatures without elements in \code{sigs.etiologies}.
+#' @name sigs.etiologies
+"sigs.etiologies"

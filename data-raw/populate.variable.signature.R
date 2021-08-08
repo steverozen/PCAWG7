@@ -73,4 +73,6 @@ signature$exome$SBS96   <-
                        BSgenome.Hsapiens.1000genomes.hs37d5::BSgenome.Hsapiens.1000genomes.hs37d5)
 attr(signature$exome$SBS96, "ref.genome") <- NULL
 
-usethis::use_data(signature, overwrite = TRUE)
+COSMIC.v3.0 <- list(signature = signature)
+
+usethis::use_data(COSMIC.v3.0, overwrite = TRUE)
