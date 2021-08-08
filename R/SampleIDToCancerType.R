@@ -20,7 +20,6 @@ SampleIDToCancerType <- function(PCAWGID) {
 }
 
 SplitExposureByTumorType <- function(exposure, tumor.type) {
-  warning("SplitExposureByTumorType is deprecagted: use SplitMatrixBySampleType")
   tt <- t(exposure)
   split.tt <- split(as.data.frame(tt), tumor.type)
   rr <- lapply(split.tt, t)

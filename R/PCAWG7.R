@@ -7,7 +7,9 @@
 #'
 #' There are also several functions for handling PCAWG identifiers:
 #'
-#' * \code{\link{SampleToCancerType}}
+#' * \code{\link{map_SP_ID_to_tumor_type}}
+#'
+#' * \code{\link{SampleIDToCancerType}}
 #'
 #' * \code{\link{SplitPCAWGMatrixByTumorType}}
 #'
