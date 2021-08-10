@@ -5,6 +5,16 @@
 #'
 #' There are also PDF plots of the signatures in \code{data-raw/plots/}.
 #'
+#' There are also several functions for handling PCAWG identifiers:
+#'
+#' * \code{\link{map_SP_ID_to_tumor_type}}
+#'
+#' * \code{\link{SampleIDToCancerType}}
+#'
+#' * \code{\link{SplitPCAWGMatrixByTumorType}}
+#'
+#' * \code{\link{SplitMatrixBySampleType}}
+#'
 #' The reference for the data is
 #'
 #' Alexandrov, L.B., Kim, J., Haradhvala, N.J. et al.

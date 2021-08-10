@@ -3,7 +3,7 @@
 \docType{data}
 \name{PCAWG.sample.id}
 \alias{PCAWG.sample.id}
-\title{Vectors of the PCAWG \code{tumor_wgs_icgc_specimin_id}s.}
+\title{Vectors of the PCAWG \code{tumor_wgs_icgc_specimen_id}s.}
 \format{
 A list with the elements:
 

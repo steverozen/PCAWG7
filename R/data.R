@@ -104,7 +104,7 @@
 "exposure.stats"
 
 
-#' Vectors of the PCAWG \code{tumor_wgs_icgc_specimin_id}s.
+#' Vectors of the PCAWG \code{tumor_wgs_icgc_specimen_id}s.
 #'
 #' Note that the PCAWG7 spectra catalogs have 2
 #' sample ids that were blacklisted after the mutational
