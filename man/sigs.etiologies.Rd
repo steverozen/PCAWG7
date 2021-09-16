@@ -3,7 +3,8 @@
 \docType{data}
 \name{sigs.etiologies}
 \alias{sigs.etiologies}
-\title{List of proposed etiologies from PCAWG7 paper, some manually abbreviated and a few summarized from the COSMIC web site.}
+\title{List of proposed etiologies from PCAWG7 paper, some manually abbreviated and
+a few summarized from the COSMIC web site.}
 \format{
 A list with the elements:
 
@@ -26,6 +27,7 @@ signatures without elements in \code{sigs.etiologies}.
 sigs.etiologies
 }
 \description{
-List of proposed etiologies from PCAWG7 paper, some manually abbreviated and a few summarized from the COSMIC web site.
+List of proposed etiologies from PCAWG7 paper, some manually abbreviated and
+a few summarized from the COSMIC web site.
 }
 \keyword{datasets}

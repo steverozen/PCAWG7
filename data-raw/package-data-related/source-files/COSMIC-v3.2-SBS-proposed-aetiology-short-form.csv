@@ -13,6 +13,8 @@ SBS8,
 SBS9,"In part, polymerase eta activity"
 SBS10a,POLE mutation
 SBS10b,POLE mutation
+SBS10c,Defective POLD1 proofreading
+SBS10d,Defective POLD1 proofreading
 SBS11,Temozolomide treatment
 SBS12,
 SBS13,APOBEC activity
@@ -71,3 +73,7 @@ SBS87,Thiopurine chemotehrapy
 SBS88,Colibactin exposure
 SBS89,
 SBS90,Duocarmycin exposure
+SBS91,
+SBS92,Tobacco smoking
+SBS93,
+SBS94,
