@@ -1,6 +1,8 @@
 # PCAWG7 0.1.1.9000
 * Added new exported data `PCAWG.sample.sheet`
 
+* Added new exported function `map_aliquot_ID_to_SP_ID`
+
 # PCAWG7 0.1.0.9006
 * Corrected typos in data `sigs.etiologies` for SBS6 and SBS44
 
