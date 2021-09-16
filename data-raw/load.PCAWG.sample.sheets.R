@@ -1,8 +1,8 @@
 # PCAWG.sample.sheets
 
 require(data.table)
-sheet1 <- fread("data-raw/release_may2016.v1.4.tsv")
-sheet2 <- fread("data-raw/release_may2016.v1.4.with_consensus_calls.tsv")
+sheet1 <- fread("data-raw/pcawg.sample.sheets/release_may2016.v1.4.tsv")
+sheet2 <- fread("data-raw/pcawg.sample.sheets/release_may2016.v1.4.with_consensus_calls.tsv")
 setdiff(colnames(sheet1), colnames(sheet2))
 # character(0)
 setdiff(colnames(sheet2), colnames(sheet1))
