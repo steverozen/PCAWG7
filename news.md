@@ -3,6 +3,8 @@
 
 * Added new exported function `map_aliquot_ID_to_SP_ID`
 
+* Updated exported data `signature` from COSMIC v3.2 website
+
 # PCAWG7 0.1.0.9006
 * Corrected typos in data `sigs.etiologies` for SBS6 and SBS44
 
