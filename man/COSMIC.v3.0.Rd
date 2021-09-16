@@ -34,7 +34,7 @@ with elements:
 \source{
 Subdirectories of \url{https://www.synapse.org/#!Synapse:syn12009743},
  2019 Oct 09, populated by
- \code{data-raw/populate.variable.siganture.R}.
+ \code{data-raw/sig.profiler.signatures/populate.variable.siganture.R}.
 }
 \usage{
 COSMIC.v3.0
