@@ -1,5 +1,5 @@
 # PCAWG7 0.1.1.9000
-* Added new exported data `PCAWG.sample.sheet`
+* Added new exported data `PCAWG.sample.sheet`, `COSMIC.v3.1`
 
 * Added new exported function `map_aliquot_ID_to_SP_ID`
 

@@ -31,11 +31,12 @@ SBS96.sigs.GRCh37 <- ICAMS::as.catalog(SBS96.sigs.GRCh37, ref.genome = "GRCh37",
                                        region = "genome")
 attr(SBS96.sigs.GRCh37, "ref.genome") <- NULL
 
-# attr(PCAWG7::signature$genome$SBS96, "class") does not have "array" because of
+# attr(COSMIC.v3.0$signature$genome$SBS96, "class") does not have "array" because of
 # older R version used when generating the data previously
-testthat::expect_equivalent(SBS96.sigs.GRCh37[, colnames(PCAWG7::signature$genome$SBS96),
-                                              drop = FALSE],
-                            PCAWG7::signature$genome$SBS96, tolerance = 1e-3)
+testthat::expect_equal(SBS96.sigs.GRCh37[, colnames(COSMIC.v3.0$signature$genome$SBS96),
+                                         drop = FALSE],
+                       COSMIC.v3.0$signature$genome$SBS96, tolerance = 1e-3,
+                       ignore_attr = TRUE)
 
 # Generate COSMIC SBS192 signatures
 SBS192.sigs.files <-
@@ -68,11 +69,12 @@ SBS192.sigs.GRCh37.names.order <-
     ifelse(x %in% need.minus.E, paste0(x, "-E"), x)})
 SBS192.sigs.GRCh37 <-
   SBS192.sigs.GRCh37[, SBS192.sigs.GRCh37.names.order, drop = FALSE]
-# attr(PCAWG7::signature$genome$SBS192, "class") does not have "array" because of
+# attr(COSMIC.v3.0$signature$genome$SBS192, "class") does not have "array" because of
 # older R version used when generating the data previously
-testthat::expect_equivalent(SBS192.sigs.GRCh37[, colnames(PCAWG7::signature$genome$SBS192),
-                                               drop = FALSE],
-                            PCAWG7::signature$genome$SBS192)
+testthat::expect_equal(SBS192.sigs.GRCh37[, colnames(COSMIC.v3.0$signature$genome$SBS192),
+                                          drop = FALSE],
+                       COSMIC.v3.0$signature$genome$SBS192,
+                       ignore_attr = TRUE)
 
 # Generate COSMIC DBS78 signatures
 DBS78.sigs.files <-
@@ -94,11 +96,12 @@ DBS78.sigs.GRCh37 <- ICAMS::as.catalog(DBS78.sigs.GRCh37, ref.genome = "GRCh37",
                                        catalog.type = "counts.signature",
                                        region = "genome")
 attr(DBS78.sigs.GRCh37, "ref.genome") <- NULL
-# attr(PCAWG7::signature$genome$DBS78, "class") does not have "array" because of
+# attr(COSMIC.v3.0$signature$genome$DBS78, "class") does not have "array" because of
 # older R version used when generating the data previously
-testthat::expect_equivalent(DBS78.sigs.GRCh37[, colnames(PCAWG7::signature$genome$DBS78),
-                                              drop = FALSE],
-                            PCAWG7::signature$genome$DBS78, tolerance = 1e-3)
+testthat::expect_equal(DBS78.sigs.GRCh37[, colnames(COSMIC.v3.0$signature$genome$DBS78),
+                                         drop = FALSE],
+                       COSMIC.v3.0$signature$genome$DBS78, tolerance = 1e-3,
+                       ignore_attr = TRUE)
 
 # Generate COSMIC ID signatures
 ID.sigs.files <-
@@ -113,10 +116,11 @@ colnames(ID.sigs.GRCh37) <-
 ID.sigs.GRCh37.names.order <- paste0("ID", 1:18)
 ID.sigs.GRCh37 <- ID.sigs.GRCh37[, ID.sigs.GRCh37.names.order, drop = FALSE]
 attr(ID.sigs.GRCh37, "region") <- "genome"
-# attr(PCAWG7::signature$genome$ID, "class") does not have "array" because of
+# attr(COSMIC.v3.0$signature$genome$ID, "class") does not have "array" because of
 # older R version used when generating the data previously
-testthat::expect_equivalent(ID.sigs.GRCh37[, 1:17, drop = FALSE],
-                            PCAWG7::signature$genome$ID)
+testthat::expect_equal(ID.sigs.GRCh37[, 1:17, drop = FALSE],
+                       COSMIC.v3.0$signature$genome$ID,
+                       ignore_attr = TRUE)
 
 # Put all the signatures inside a list
 signature <- list()
@@ -126,5 +130,6 @@ signature$genome <- list(SBS96 = SBS96.sigs.GRCh37,
                                      DBS78 = DBS78.sigs.GRCh37,
                                      ID = ID.sigs.GRCh37)
 
+COSMIC.v3.1 <- list(signature = signature)
 
-usethis::use_data(signature, overwrite = TRUE)
+usethis::use_data(COSMIC.v3.1, overwrite = TRUE)
