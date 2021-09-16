@@ -8,7 +8,7 @@ signature$genome <- list()
 signature$exome  <- list()
 
 signature$genome$SBS192 <-
-  ICAMS::ReadCatalog("data-raw/sigProfiler_TSB_signatures.csv",
+  ICAMS::ReadCatalog("data-raw/sig.profiler.signatures/sigProfiler_TSB_signatures.csv",
                      catalog.type = "counts.signature",
                      region = "transcript", # ref.genome = "hg19",
                      strict = FALSE,
@@ -19,7 +19,7 @@ attr(signature$genome$SBS192, "ref.genome") <- NULL
 
 signature$genome$SBS96  <-
   ICAMS::ReadCatalog(
-    "data-raw/sigProfiler_SBS_signatures_2019_05_22.csv",
+    "data-raw/sig.profiler.signatures/sigProfiler_SBS_signatures_2019_05_22.csv",
     catalog.type = "counts.signature",
     region = "genome",
     ref.genome =
@@ -28,7 +28,7 @@ signature$genome$SBS96  <-
 attr(signature$genome$SBS96, "ref.genome") <- NULL
 
 signature$genome$DBS78    <-
-  ICAMS::ReadCatalog("data-raw/sigProfiler_DBS_signatures.csv",
+  ICAMS::ReadCatalog("data-raw/sig.profiler.signatures/sigProfiler_DBS_signatures.csv",
                      catalog.type = "counts.signature",
                      region = "genome", #, ref.genome = "hg19"
                      ref.genome =
@@ -49,7 +49,7 @@ ReadPCAWG7ID <- function(file) {
   return(df)
 }
 
-pre.id.cat <- read.csv("data-raw/sigProfiler_ID_signatures_fixed_rownames.csv")
+pre.id.cat <- read.csv("data-raw/sig.profiler.signatures/sigProfiler_ID_signatures_fixed_rownames.csv")
 rownames(pre.id.cat) <- pre.id.cat[ , 1]
 pre.id.cat <- pre.id.cat[ , -1]
 signature$genome$ID <-
@@ -62,7 +62,7 @@ signature$genome$ID <-
       )
 attr(signature$genome$ID, "ref.genome") <- NULL
 
-exomes <- read.csv("data-raw/sigProfiler_exome_SBS_signatures.csv")
+exomes <- read.csv("data-raw/sig.profiler.signatures/sigProfiler_exome_SBS_signatures.csv")
 rownames(exomes) <- paste0(exomes$SubType, substr(exomes$Type, 3, 3))
 exomes <- exomes[ , -(1:2)]
 signature$exome$SBS96   <-
