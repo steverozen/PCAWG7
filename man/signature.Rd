@@ -33,6 +33,13 @@ Cancer, (v3.2 - March 2021)
 The signatures are all from Human GRCh37 reference genome.
 }
 
+\section{Note}{
+
+SBS10c, SBS10d, SBS91, SBS92, SBS93, SBS94 (total 6) new SBS signatures were
+added in COSMIC v3.2. See the news from COSMIC release for more details
+\url{https://cosmic-blog.sanger.ac.uk/cosmic-mutational-signatures-release-v3-2/}
+}
+
 \examples{
 SBS96.sigs <- signature$genome$SBS96
 }
