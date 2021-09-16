@@ -129,7 +129,8 @@
 #' @name PCAWG.sample.id
 "PCAWG.sample.id"
 
-#' List of proposed etiologies from PCAWG7 paper, some manually abbreviated and a few summarized from the COSMIC web site.
+#' List of proposed etiologies from PCAWG7 paper, some manually abbreviated and
+#' a few summarized from the COSMIC web site.
 #'
 #' @format
 #'
@@ -151,3 +152,25 @@
 #' signatures without elements in \code{sigs.etiologies}.
 #' @name sigs.etiologies
 "sigs.etiologies"
+
+#' PCAWG sample sheet which contains various sample information
+#'
+#' @source \url{https://dcc.icgc.org/api/v1/download?fn=/PCAWG/data_releases/latest/pcawg_sample_sheet.v1.4.2016-09-14.tsv},
+#'  2019 Oct 15
+#'
+#' @format
+#'
+#' A data table with the following columns:
+#' * donor_unique_id
+#' * donor_wgs_exclusion_white_gray
+#' * submitter_donor_id
+#' * icgc_donor_id
+#' * dcc_project_code
+#' * aliquot_id
+#' * submitter_specimen_id
+#' * icgc_sample_id
+#' * dcc_specimen_type
+#' * library_strategy
+#' @md
+#' @name PCAWG.sample.sheet
+"PCAWG.sample.sheet"

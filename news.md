@@ -1,5 +1,8 @@
+# PCAWG7 0.1.1.9000
+* Added new exported data `PCAWG.sample.sheet`
+
 # PCAWG7 0.1.0.9006
-* Corrected typos in data `sigs.etiologies` for SBS6 and SBS44.
+* Corrected typos in data `sigs.etiologies` for SBS6 and SBS44
 
 # PCAWG7 0.1.0.9005
 * Removed "SBS84" "SBS85" "SBS86" "SBS87" "SBS89" from internal data `sigs.etiologies$SBS192`
