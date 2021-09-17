@@ -2,7 +2,7 @@
 % Please edit documentation in R/map_SP_ID_to_tumor_type.R
 \name{map_SP_ID_to_tumor_type}
 \alias{map_SP_ID_to_tumor_type}
-\title{Given PCAWG "SP" IDs (eg. SP123958) return either the "full" IDs (Kidney-ChRCC::SP123958) or just the tumor type (Kidney-ChRCC)}
+\title{Given PCAWG "SP" IDs (e.g. SP123958) return either the "full" IDs (Kidney-ChRCC::SP123958) or just the tumor type (Kidney-ChRCC)}
 \usage{
 map_SP_ID_to_tumor_type(SP.IDs, merge = TRUE)
 }
@@ -12,7 +12,7 @@ map_SP_ID_to_tumor_type(SP.IDs, merge = TRUE)
 \item{merge}{If \code{TRUE} return a parallel vector of <tumor_type>::<SP_ID>; otherwise just <tumor_type>.}
 }
 \description{
-Given PCAWG "SP" IDs (eg. SP123958) return either the "full" IDs (Kidney-ChRCC::SP123958) or just the tumor type (Kidney-ChRCC)
+Given PCAWG "SP" IDs (e.g. SP123958) return either the "full" IDs (Kidney-ChRCC::SP123958) or just the tumor type (Kidney-ChRCC)
 }
 \details{
 Fails with an "subscript out of bounds" error if any of the elements of \code{SP.IDs} is unknown.

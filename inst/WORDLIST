@@ -2,6 +2,7 @@ Alexandrov
 BSgenome
 Cancer’
 Catalogue
+ChRCC
 DBS
 DBSs
 GRCh
@@ -16,13 +17,20 @@ SplitMatrixBySampleType
 TCGA
 Transcriptionally
 WGS
+aecb
 al
+aliquot
+cd
+dcc
 doi
+ee
 et
 exome
 exomes
+fccaf
 github
 https
+icgc
 indel
 indels
 pentanucleotide
@@ -31,3 +39,4 @@ steverozen
 trinucleotide
 tt
 uk
+wgs

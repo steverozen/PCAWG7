@@ -1,10 +1,12 @@
-# PCAWG7 0.1.1.9000
+# PCAWG7 0.1.1.9001
 * Added new exported data `PCAWG.sample.sheet`, `COSMIC.v3.1`
 
 * Added new exported function `map_aliquot_ID_to_SP_ID`
 
 * Updated exported data `signature` from COSMIC v3.2 website and added signature
 etiologies data for new signatures
+
+* Updated description for package documentation
 
 # PCAWG7 0.1.0.9006
 * Corrected typos in data `sigs.etiologies` for SBS6 and SBS44

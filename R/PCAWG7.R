@@ -1,4 +1,6 @@
-#' PCAWG7: A package of data from 'Repertoire of Mutational Signatures in Human Cancer'
+#' PCAWG7: A package of data from the COSMIC web site
+#' \url{https://cancer.sanger.ac.uk/signatures/} and paper 'Repertoire
+#' of Mutational Signatures in Human Cancer'
 #'
 #' This is a data package with 3 main package variables:
 #' \code{\link{exposure}}, \code{\link{signature}}, and \code{\link{spectra}}.
@@ -8,6 +10,8 @@
 #' There are also several functions for handling PCAWG identifiers:
 #'
 #' * \code{\link{map_SP_ID_to_tumor_type}}
+#'
+#' * \code{\link{map_aliquot_ID_to_SP_ID}}
 #'
 #' * \code{\link{SampleIDToCancerType}}
 #'

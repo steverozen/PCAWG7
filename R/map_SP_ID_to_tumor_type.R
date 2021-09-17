@@ -1,4 +1,4 @@
-#' Given PCAWG "SP" IDs (eg. SP123958) return either the "full" IDs (Kidney-ChRCC::SP123958) or just the tumor type (Kidney-ChRCC)
+#' Given PCAWG "SP" IDs (e.g. SP123958) return either the "full" IDs (Kidney-ChRCC::SP123958) or just the tumor type (Kidney-ChRCC)
 #'
 #' @param SP.IDs A character vector of PCAWG "SP" IDs.
 #'
