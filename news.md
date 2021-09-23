@@ -1,3 +1,6 @@
+# PCAWG7 0.1.1.9002
+* Fixed typo in SBS96 signature etiologies table
+
 # PCAWG7 0.1.1.9001
 * Added new exported data `PCAWG.sample.sheet`, `COSMIC.v3.1`
 
