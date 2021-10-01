@@ -1,0 +1,8 @@
+Package: PCAWG7
+Version: 0.1.2
+Depends: R (>= 3.5),
+Imports: ICAMS (>= 2.3.5.9002)
+Suggests: usethis, testthat (>= 3.0.0)
+License: GPL-3
+MD5sum: 6e147e9b0cad0335199081b40a798a70
+NeedsCompilation: no
