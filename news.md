@@ -1,3 +1,6 @@
+# PCAWG7 0.1.2
+* Created `src/contrib` structure in top directory and added in source package file.
+
 # PCAWG7 0.1.0.9006
 * Corrected typos in data `sigs.etiologies` for SBS6 and SBS44.
 
