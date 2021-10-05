@@ -1,3 +1,6 @@
+# PCAWG7 0.1.1.9006
+* Added new exported data `COSMIC.v3.2` and documentation
+
 # PCAWG7 0.1.1.9005
 * Renamed internal data `sigs.etiologies` to `etiologies` and made it exported
 

@@ -3,7 +3,7 @@
 \docType{data}
 \name{COSMIC.v3.0}
 \alias{COSMIC.v3.0}
-\title{PCAWG7 SigProfiler reference signatures.}
+\title{PCAWG7 SigProfiler reference signatures}
 \format{
 A list with one element, \code{signature}, which in turn is a list
 with elements:
@@ -40,7 +40,7 @@ Subdirectories of \url{https://www.synapse.org/#!Synapse:syn12009743},
 COSMIC.v3.0
 }
 \description{
-PCAWG7 SigProfiler reference signatures.
+PCAWG7 SigProfiler reference signatures
 }
 \examples{
 SBS96.sigs <- COSMIC.v3.0$signature$genome$SBS96
