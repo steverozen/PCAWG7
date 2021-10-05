@@ -34,3 +34,5 @@ etiologies <- list(SBS96 = sigs.etiologies.SBS96,
                    SBS192 = sigs.etiologies.SBS192,
                    DBS78 = sigs.etiologies.DBS78,
                    ID = sigs.etiologies.ID)
+
+usethis::use_data(etiologies, overwrite = TRUE)

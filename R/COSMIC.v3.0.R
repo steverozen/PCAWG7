@@ -1,4 +1,4 @@
-#' PCAWG7 SigProfiler reference signatures.
+#' PCAWG7 SigProfiler reference signatures
 #'
 #' @source Subdirectories of \url{https://www.synapse.org/#!Synapse:syn12009743},
 #'  2019 Oct 09, populated by

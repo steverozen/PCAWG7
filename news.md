@@ -1,5 +1,5 @@
 # PCAWG7 0.1.1.9005
-* Renamed internal data `sigs.etiologies` to `etiologies`
+* Renamed internal data `sigs.etiologies` to `etiologies` and made it exported
 
 # PCAWG7 0.1.1.9004
 * Moved `ICAMS` package to `Suggests` filed in DESCRIPTION and updated code 
