@@ -28,7 +28,7 @@ Extract tumor type from column names and return the input matrix split by
 tumor type based on the PCAWG <tumor_type>::<sample_id> convention
 }
 \examples{
+\dontrun{
 mm <- SplitPCAWGMatrixByTumorType(spectra$PCAWG$DBS78)
-mm[[3]][1:4, 1:5]
-
+}
 }
