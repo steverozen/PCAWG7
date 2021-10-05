@@ -135,13 +135,10 @@
 #' @format
 #'
 #' A list with the elements:
-#'
-#' \describe{
-#'   \item{SBS96}{}
-#'   \item{SBS192}{}
-#'   \item{DBS78}{}
-#'   \item{ID}{}
-#' }
+#' * SBS96
+#' * SBS192
+#' * DBS78
+#' * ID
 #'
 #' Each list element is a single column matrix with rownames being the
 #' signature IDs and values being a short character string
@@ -149,9 +146,10 @@
 #' proposed etiology.
 #'
 #' In general use \code{\link{GetEtiology}}, which handles new
-#' signatures without elements in \code{sigs.etiologies}.
-#' @name sigs.etiologies
-"sigs.etiologies"
+#' signatures without elements in \code{etiologies}.
+#' @name etiologies
+#' @md
+"etiologies"
 
 #' PCAWG sample sheet which contains various sample information
 #'
