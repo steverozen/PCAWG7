@@ -20,6 +20,11 @@ Translate aliquot IDs (e.g. e0fccaf5-925a-41f9-b87c-cd5ee4aecb59) to "SP" IDs (e
 If there are aliquot IDs that cannot be matched to any "SP" IDs,
   return NA with a warning.
 }
+\note{
+This function is mainly designed to translate the file names of PCAWG
+  consensus callsets for SNV/Indel
+  (https://dcc.icgc.org/api/v1/download?fn=/PCAWG/consensus_snv_indel/final_consensus_snv_indel_passonly_icgc.public.tgz)
+}
 \examples{
 \dontrun{
 aliquot.ids <- c("e0fccaf5-925a-41f9-b87c-cd5ee4aecb59", "foo")
