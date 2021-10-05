@@ -1,3 +1,7 @@
+# PCAWG7 0.1.1.9004
+* Moved `ICAMS` package to `Suggests` filed in DESCRIPTION and updated code 
+to use the package conditionally
+
 # PCAWG7 0.1.1.9003
 * Improved time performance for function `map_aliquot_ID_to_SP_ID` and added `Note` section in documentation. Return NA with
 a warning for those aliquot IDs that cannot be matched to any "SP" IDs

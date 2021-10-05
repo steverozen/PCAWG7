@@ -29,6 +29,9 @@ SplitMatrixBySampleType <- function(M, sample.type) {
   if (is.null(M.catalog.type)) {
     rr <- lapply(split.tt, t)
   } else {
+    if ("" == system.file(package = "ICAMS")) {
+      stop("\nPlease install ICAMS: install.packages(\"ICAMS\")")
+    }
     M.region     <- attr(M, "region")
     M.ref.genome <- attr(M, "ref.genome")
     M.abundance  <- attr(M, "abundance")
