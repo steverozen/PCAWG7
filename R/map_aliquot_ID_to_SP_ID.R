@@ -2,22 +2,29 @@
 #'
 #' @param aliquot.ids Character vector of aliquot IDs.
 #'
+#' @details If there are aliquot IDs that cannot be matched to any "SP" IDs,
+#'   return NA with a warning.
+#'
 #' @export
 #'
 #' @return Character vector of corresponding "SP" IDs. If a corresponding
 #' aliquot ID cannot be found, then return an empty string.
 #'
 #' @examples
+#' \dontrun{
 #' aliquot.ids <- c("e0fccaf5-925a-41f9-b87c-cd5ee4aecb59", "foo")
 #' SP.ids <- map_aliquot_ID_to_SP_ID(aliquot.ids)
+#' }
+
 map_aliquot_ID_to_SP_ID <- function(aliquot.ids) {
-  aliquot.ids.full <- PCAWG7::PCAWG.sample.sheet$aliquot_id
-  SP.ids <- sapply(aliquot.ids, function(aliquot.id) {
-    if (any(grepl(aliquot.id, aliquot.ids.full))) {
-      indices <- grep(aliquot.id, aliquot.ids.full)
-      return(unique(PCAWG7::PCAWG.sample.sheet[indices, "icgc_specimen_id"]))
-    } else {
-      return("")
-    }})
+  indices <- match(x = aliquot.ids, table = PCAWG7::PCAWG.sample.sheet$aliquot_id)
+  SP.ids <- PCAWG7::PCAWG.sample.sheet$icgc_specimen_id[indices]
+  indices.NA <- which(is.na(SP.ids))
+  if (length(indices.NA) > 0) {
+    warning("\nCannot find matching SP IDs for the following aliquot IDs\n",
+            paste(aliquot.ids[indices.NA], collapse = " "),
+            "\nReturning NA instead")
+  }
   return(SP.ids)
 }
+

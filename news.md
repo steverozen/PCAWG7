@@ -1,3 +1,7 @@
+# PCAWG7 0.1.1.9003
+* Improved time performance for function `map_aliquot_ID_to_SP_ID`. Return NA with
+a warning for those aliquot IDs that cannot be matched to any "SP" IDs
+
 # PCAWG7 0.1.1.9002
 * Fixed typo in SBS96 signature etiologies table
 
