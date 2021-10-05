@@ -3,7 +3,7 @@
 \docType{data}
 \name{PCAWG.sample.id}
 \alias{PCAWG.sample.id}
-\title{Vectors of the PCAWG \code{tumor_wgs_icgc_specimen_id}s.}
+\title{Vectors of the PCAWG \code{tumor_wgs_icgc_specimen_id}s}
 \format{
 A list with the elements:
 
@@ -26,5 +26,9 @@ sample ids that were blacklisted after the mutational
 signature analysis was
 underway. The blacklisted samples are \code{SP116419}
 and \code{SP116883}, which are in \code{PCAWG.sample.id$black}.
+}
+\examples{
+PCAWG.white.ids <- PCAWG.sample.id$white
+
 }
 \keyword{datasets}

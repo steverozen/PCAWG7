@@ -11,7 +11,7 @@ map_aliquot_ID_to_SP_ID(aliquot.ids)
 }
 \value{
 Character vector of corresponding "SP" IDs. If a corresponding
-aliquot ID cannot be found, then return an empty string.
+aliquot ID cannot be found, then return return NA with a warning.
 }
 \description{
 Translate aliquot IDs (e.g. e0fccaf5-925a-41f9-b87c-cd5ee4aecb59) to "SP" IDs (e.g. SP1682)

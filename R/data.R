@@ -1,4 +1,4 @@
-#' PCAWG7 SigProfiler signature assignments (numbers of mutations due to each signature in each tumor).
+#' PCAWG7 SigProfiler signature assignments (numbers of mutations due to each signature in each tumor)
 #'
 #' @source Files of \url{https://www.synapse.org/#!Synapse:syn12009743},
 #'   2019 Oct 09, populated by
@@ -42,7 +42,7 @@
 "exposure"
 
 
-#' PCAWG7 mutational spectra (catalogs).
+#' PCAWG7 mutational spectra (catalogs)
 #'
 #' @source Files below \url{https://www.synapse.org/#!Synapse:syn11801889},
 #'   2019 Oct 09. Populated by
@@ -104,7 +104,7 @@
 "exposure.stats"
 
 
-#' Vectors of the PCAWG \code{tumor_wgs_icgc_specimen_id}s.
+#' Vectors of the PCAWG \code{tumor_wgs_icgc_specimen_id}s
 #'
 #' Note that the PCAWG7 spectra catalogs have 2
 #' sample ids that were blacklisted after the mutational
@@ -125,12 +125,14 @@
 #'   \item{black}{Blacklisted IDs}
 #' }
 #'
-
+#' @examples
+#' PCAWG.white.ids <- PCAWG.sample.id$white
+#'
 #' @name PCAWG.sample.id
 "PCAWG.sample.id"
 
 #' List of proposed etiologies from PCAWG7 paper, some manually abbreviated and
-#' a few summarized from the COSMIC web site.
+#' a few summarized from the COSMIC web site
 #'
 #' @format
 #'
@@ -148,7 +150,12 @@
 #' In general use \code{\link{GetEtiology}}, which handles new
 #' signatures without elements in \code{etiologies}.
 #' @name etiologies
+#'
 #' @md
+#'
+#' @examples
+#' SBS96.etiologies <- etiologies$SBS96
+#'
 "etiologies"
 
 #' PCAWG sample sheet which contains various sample information
@@ -170,5 +177,9 @@
 #' * dcc_specimen_type
 #' * library_strategy
 #' @md
+#'
+#' @examples
+#' aliquot.ids <- PCAWG.sample.sheet$aliquot_id
+#'
 #' @name PCAWG.sample.sheet
 "PCAWG.sample.sheet"

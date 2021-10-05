@@ -1,4 +1,5 @@
-#' Extract tumor type from column names and return the input matrix split by tumor type based on the PCAWG <tumor_type>::<sample_id> convention.
+#' Extract tumor type from column names and return the input matrix split by
+#' tumor type based on the PCAWG <tumor_type>::<sample_id> convention
 #'
 #' @param M A numerical matrix or data frame or
 #'   \code{\link[ICAMS]{ICAMS}} catalog in which

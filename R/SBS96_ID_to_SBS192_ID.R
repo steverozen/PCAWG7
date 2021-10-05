@@ -1,4 +1,4 @@
-#' Translate SBS96 signature IDs to SBS192 signature IDs by adding "-E" if necessary.
+#' Translate SBS96 signature IDs to SBS192 signature IDs by adding "-E" if necessary
 #'
 #' @param sig.ids Character vector of SBS96 signature IDs.
 #'

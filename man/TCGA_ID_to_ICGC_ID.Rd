@@ -2,7 +2,7 @@
 % Please edit documentation in R/TCGA_ID_to_ICGC_ID.R
 \name{TCGA_ID_to_ICGC_ID}
 \alias{TCGA_ID_to_ICGC_ID}
-\title{Translate TCGA(The Cancer Genome Atlas) IDs to ICGC(International Cancer
+\title{Translate TCGA (The Cancer Genome Atlas) IDs to ICGC (International Cancer
 Genome Consortium) IDs}
 \usage{
 TCGA_ID_to_ICGC_ID(tcga.ids)
@@ -11,15 +11,21 @@ TCGA_ID_to_ICGC_ID(tcga.ids)
 \item{tcga.ids}{Character vector of TCGA IDs.}
 }
 \value{
-Character vector of corresponding ICGC IDs. If a corresponding
-ICGC ID cannot be found, then return an empty string.
+Character vector of corresponding ICGC IDs. If a corresponding ICGC
+  ID cannot be found, then return NA with a warning.
 }
 \description{
-Translate TCGA(The Cancer Genome Atlas) IDs to ICGC(International Cancer
+Translate TCGA (The Cancer Genome Atlas) IDs to ICGC (International Cancer
 Genome Consortium) IDs
 }
+\details{
+If there are TCGA IDs that cannot be matched to any ICGC IDs,
+  return NA with a warning.
+}
 \examples{
+\dontrun{
 tcga.ids <- c("TCGA-AA-A01V", "foo", "TCGA-CA-6717", "bar")
 icgc.ids <- TCGA_ID_to_ICGC_ID(tcga.ids)
 icgc.ids <- icgc.ids[nzchar(icgc.ids)]
+}
 }

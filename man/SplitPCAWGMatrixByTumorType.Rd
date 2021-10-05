@@ -2,7 +2,8 @@
 % Please edit documentation in R/SplitPCAWGMatrixByTumorType.R
 \name{SplitPCAWGMatrixByTumorType}
 \alias{SplitPCAWGMatrixByTumorType}
-\title{Extract tumor type from column names and return the input matrix split by tumor type based on the PCAWG <tumor_type>::<sample_id> convention.}
+\title{Extract tumor type from column names and return the input matrix split by
+tumor type based on the PCAWG <tumor_type>::<sample_id> convention}
 \usage{
 SplitPCAWGMatrixByTumorType(M)
 }
@@ -23,7 +24,8 @@ Invisibly, the list of exposure matrices or
   \code{matrix} by the tumor type encoded in the column names.
 }
 \description{
-Extract tumor type from column names and return the input matrix split by tumor type based on the PCAWG <tumor_type>::<sample_id> convention.
+Extract tumor type from column names and return the input matrix split by
+tumor type based on the PCAWG <tumor_type>::<sample_id> convention
 }
 \examples{
 mm <- SplitPCAWGMatrixByTumorType(spectra$PCAWG$DBS78)

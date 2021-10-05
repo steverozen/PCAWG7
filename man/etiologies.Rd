@@ -4,7 +4,7 @@
 \name{etiologies}
 \alias{etiologies}
 \title{List of proposed etiologies from PCAWG7 paper, some manually abbreviated and
-a few summarized from the COSMIC web site.}
+a few summarized from the COSMIC web site}
 \format{
 A list with the elements:
 \itemize{
@@ -27,6 +27,10 @@ etiologies
 }
 \description{
 List of proposed etiologies from PCAWG7 paper, some manually abbreviated and
-a few summarized from the COSMIC web site.
+a few summarized from the COSMIC web site
+}
+\examples{
+SBS96.etiologies <- etiologies$SBS96
+
 }
 \keyword{datasets}

@@ -29,4 +29,8 @@ PCAWG.sample.sheet
 \description{
 PCAWG sample sheet which contains various sample information
 }
+\examples{
+aliquot.ids <- PCAWG.sample.sheet$aliquot_id
+
+}
 \keyword{datasets}

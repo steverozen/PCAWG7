@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @return Character vector of corresponding "SP" IDs. If a corresponding
-#' aliquot ID cannot be found, then return an empty string.
+#' aliquot ID cannot be found, then return return NA with a warning.
 #'
 #' @note This function is mainly designed to translate the file names of PCAWG
 #'   consensus callsets for SNV/Indel

@@ -3,7 +3,8 @@
 \docType{package}
 \name{PCAWG7}
 \alias{PCAWG7}
-\title{PCAWG7: A package of data from the COSMIC web site
+\title{PCAWG7: A package of data from COSMIC (the Catalogue Of Somatic
+Mutations In Cancer) website
 \url{https://cancer.sanger.ac.uk/signatures/} and paper 'Repertoire
 of Mutational Signatures in Human Cancer'}
 \description{
@@ -30,4 +31,7 @@ The reference for the data is
 Alexandrov, L.B., Kim, J., Haradhvala, N.J. et al.
 The repertoire of mutational signatures in human cancer.
 Nature 578, 94-101 (2020). \url{https://doi.org/10.1038/s41586-020-1943-3}.
+
+COSMIC mutational signatures data were downloaded from
+\url{https://cancer.sanger.ac.uk/signatures/downloads/}.
 }

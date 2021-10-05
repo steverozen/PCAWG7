@@ -2,7 +2,7 @@
 % Please edit documentation in R/SplitMatrixBySampleType.R
 \name{SplitMatrixBySampleType}
 \alias{SplitMatrixBySampleType}
-\title{Split an exposure matrix or spectrum matrix into a list of matrices, each for a single sample type.}
+\title{Split an exposure matrix or spectrum matrix into a list of matrices, each for a single sample type}
 \usage{
 SplitMatrixBySampleType(M, sample.type)
 }
@@ -24,7 +24,7 @@ Invisibly, the list of exposure or spectrum
   \code{M} by \code{sample.type}.
 }
 \description{
-Split an exposure matrix or spectrum matrix into a list of matrices, each for a single sample type.
+Split an exposure matrix or spectrum matrix into a list of matrices, each for a single sample type
 }
 \examples{
 ff <- matrix(1, nrow=3, ncol = 2)

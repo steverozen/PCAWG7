@@ -3,7 +3,7 @@
 \docType{data}
 \name{spectra}
 \alias{spectra}
-\title{PCAWG7 mutational spectra (catalogs).}
+\title{PCAWG7 mutational spectra (catalogs)}
 \format{
 A list with the elements:
 
@@ -42,7 +42,7 @@ Files below \url{https://www.synapse.org/#!Synapse:syn11801889},
 spectra
 }
 \description{
-PCAWG7 mutational spectra (catalogs).
+PCAWG7 mutational spectra (catalogs)
 }
 \examples{
 SBS96.spectra <- spectra$PCAWG$SBS96

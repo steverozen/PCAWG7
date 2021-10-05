@@ -1,4 +1,4 @@
-#' Split an exposure matrix or spectrum matrix into a list of matrices, each for a single sample type.
+#' Split an exposure matrix or spectrum matrix into a list of matrices, each for a single sample type
 #'
 #' @param M A numerical matrix or data frame or
 #'   \code{\link[ICAMS]{ICAMS}} catalog in which

@@ -3,7 +3,7 @@
 \docType{data}
 \name{exposure}
 \alias{exposure}
-\title{PCAWG7 SigProfiler signature assignments (numbers of mutations due to each signature in each tumor).}
+\title{PCAWG7 SigProfiler signature assignments (numbers of mutations due to each signature in each tumor)}
 \format{
 A list with the elements:
 
@@ -43,7 +43,7 @@ Files of \url{https://www.synapse.org/#!Synapse:syn12009743},
 exposure
 }
 \description{
-PCAWG7 SigProfiler signature assignments (numbers of mutations due to each signature in each tumor).
+PCAWG7 SigProfiler signature assignments (numbers of mutations due to each signature in each tumor)
 }
 \examples{
 SBS96.exposure <- exposure$PCAWG$SBS96

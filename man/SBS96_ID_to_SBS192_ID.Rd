@@ -2,7 +2,7 @@
 % Please edit documentation in R/SBS96_ID_to_SBS192_ID.R
 \name{SBS96_ID_to_SBS192_ID}
 \alias{SBS96_ID_to_SBS192_ID}
-\title{Translate SBS96 signature IDs to SBS192 signature IDs by adding "-E" if necessary.}
+\title{Translate SBS96 signature IDs to SBS192 signature IDs by adding "-E" if necessary}
 \usage{
 SBS96_ID_to_SBS192_ID(sig.ids)
 }
@@ -14,7 +14,7 @@ Character vector of corresponding SBS192 signature IDs; some
   have "-E" (for exome) post-pended.
 }
 \description{
-Translate SBS96 signature IDs to SBS192 signature IDs by adding "-E" if necessary.
+Translate SBS96 signature IDs to SBS192 signature IDs by adding "-E" if necessary
 }
 \examples{
 SBS96.ids <- c("SBS1", "SBS23", "SBS25")
