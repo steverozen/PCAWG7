@@ -17,6 +17,7 @@
 #'
 #' @section Remark:
 #' The signatures are all from Human GRCh37 reference genome.
+#' See \link[ICAMS]{CatalogRowOrder} for the classification of mutation types.
 #'
 #' @section Note:
 #' SBS10c, SBS10d, SBS91, SBS92, SBS93, SBS94 (total 6) new SBS signatures were

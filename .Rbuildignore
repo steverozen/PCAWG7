@@ -6,3 +6,4 @@
 ^.travis\.yml$
 ^PCAWG7_.*\.pdf$
 ^\.github$
+^cran-comments\.md$

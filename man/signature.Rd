@@ -31,6 +31,7 @@ Cancer, (v3.2 - March 2021)
 \section{Remark}{
 
 The signatures are all from Human GRCh37 reference genome.
+See \link[ICAMS]{CatalogRowOrder} for the classification of mutation types.
 }
 
 \section{Note}{
