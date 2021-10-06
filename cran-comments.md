@@ -9,9 +9,9 @@ This is a new submission. PCAWG7 is a data package.
 ## R CMD check results
 There were no ERRORs or WARNINGs.
 There is one NOTE: 
-    installed size is 11.4Mb
+    installed size is  8.8Mb
     sub-directories of 1Mb or more:
-      data  11.3Mb
+      data   8.7Mb
 
 ## Downstream dependencies
 There are currently no downstream dependencies for this package.
