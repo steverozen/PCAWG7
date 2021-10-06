@@ -1,6 +1,10 @@
 library(ICAMS)
 library(BSgenome.Hsapiens.1000genomes.hs37d5)
 
+# The SBS1536 catalog were not included to reduce the package size
+# The CRAN policy limits R package size to 5 Mb
+# See https://cran.r-project.org/web/packages/policies.html#Source-packages
+
 spectra <- list()
 spectra$PCAWG <- list()
 spectra$TCGA <- list()
@@ -18,7 +22,7 @@ rr <- function(filename, region) {
 
 spectra$PCAWG$SBS96 <- rr("WGS_PCAWG.96.csv", "genome")
 spectra$PCAWG$SBS192<- rr("WGS_PCAWG.192.csv", "transcript")
-spectra$PCAWG$SBS1536<- rr("WGS_PCAWG.1536.csv", "genome")
+#spectra$PCAWG$SBS1536<- rr("WGS_PCAWG.1536.csv", "genome")
 spectra$PCAWG$DBS78<- rr("WGS_PCAWG.dinucs.csv", "genome")
 spectra$PCAWG$ID<- rr("WGS_PCAWG.indels.csv", "genome")
 
@@ -28,19 +32,19 @@ spectra$DBS78 <- spectra$PCAWG$DBS78
 
 spectra$other.genome$SBS96 <- rr("WGS_Other.96.csv", "genome")
 spectra$other.genome$SBS192<- rr("WGS_Other.192.csv", "transcript")
-spectra$other.genome$SBS1536<- rr("WGS_Other.1536.csv", "genome")
+#spectra$other.genome$SBS1536<- rr("WGS_Other.1536.csv", "genome")
 spectra$other.genome$DBS78<- rr("WGS_Other.dinucs.csv", "genome")
 # Note, no indels
 
 spectra$TCGA$SBS96 <- rr("WES_TCGA.96.csv", "exome")
 spectra$TCGA$SBS192<- rr("WES_TCGA.192.csv", "exome")
-spectra$TCGA$SBS1536<- rr("WES_TCGA.1536.csv", "exome")
+#spectra$TCGA$SBS1536<- rr("WES_TCGA.1536.csv", "exome")
 spectra$TCGA$DBS78<- rr("WES_TCGA.dinucs.csv", "exome")
 spectra$TCGA$ID<- rr("WES_TCGA.indels.csv", "exome")
 
 spectra$other.exome$SBS96 <- rr("WES_Other.96.csv", "exome")
 spectra$other.exome$SBS192<- rr("WES_Other.192.csv", "exome")
-spectra$other.exome$SBS1536<- rr("WES_Other.1536.csv", "exome")
+#spectra$other.exome$SBS1536<- rr("WES_Other.1536.csv", "exome")
 spectra$other.exome$DBS78<- rr("WES_Other.dinucs.csv", "exome")
 # Note, no indels
 

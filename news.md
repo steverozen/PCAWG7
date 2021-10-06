@@ -1,3 +1,9 @@
+# PCAWG7 0.1.3
+* Removed SBS1536 catalog from exported data `spectra` to reduce package size
+
+# PCAWG7 0.1.2
+* Fixed bugs in URL links to meet CRAN policy
+
 # PCAWG7 0.1.1.9006
 * Added new exported data `COSMIC.v3.2` and documentation
 
