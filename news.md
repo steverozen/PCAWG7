@@ -1,3 +1,6 @@
+# PCAWG7 0.1.3
+* Added TCGA exposure stats in exported data `exposure.stats` .
+
 # PCAWG7 0.1.2
 * Created `src/contrib` structure in top directory and added in source package file.
 
