@@ -29,6 +29,8 @@ GatherPCAWG7ExposureStats <- function() {
     SplitPCAWGMatrixByTumorType(PCAWG7::exposure$TCGA$SBS96)
   TCGA.ID <-
     SplitPCAWGMatrixByTumorType(PCAWG7::exposure$TCGA$ID)
+  other.genome.SBS96 <-
+    SplitPCAWGMatrixByTumorType(PCAWG7::exposure$other.genome$SBS96)
   if (FALSE) {
     other.genome.SBS96 <-
       SplitPCAWGMatrixByTumorType(PCAWG7::exposure$other.genome$SBS96)
@@ -50,6 +52,7 @@ GatherPCAWG7ExposureStats <- function() {
   exposure.stats$TCGA$SBS96 <- lapply(TCGA.SBS96, ExposureStats1TumorType)
   exposure.stats$TCGA$ID    <- lapply(TCGA.ID,    ExposureStats1TumorType)
 
+  exposure.stats$other.genome$SBS96 <- lapply(other.genome.SBS96, ExposureStats1TumorType)
   usethis::use_data(exposure.stats, overwrite = TRUE)
 }
 
