@@ -36,7 +36,7 @@ A list with the elements:
 }
 \source{
 Files of \url{https://www.synapse.org/#!Synapse:syn12009743},
-  2019 Oct 09, populated by
+  2019 Oct 09, \cr populated by
  \code{data-raw/sig.profiler.sures/load.package.variable.exposure.R}.
 }
 \usage{

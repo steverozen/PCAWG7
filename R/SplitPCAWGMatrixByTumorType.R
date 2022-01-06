@@ -16,9 +16,8 @@
 #'   \code{matrix} by the tumor type encoded in the column names.
 #'
 #' @examples
-#' \dontrun{
 #' mm <- SplitPCAWGMatrixByTumorType(spectra$PCAWG$DBS78)
-#' }
+#'
 #' @export
 #'
 SplitPCAWGMatrixByTumorType <- function(M) {

@@ -15,10 +15,8 @@
 #'   (https://dcc.icgc.org/api/v1/download?fn=/PCAWG/consensus_snv_indel/final_consensus_snv_indel_passonly_icgc.public.tgz)
 #'
 #' @examples
-#' \dontrun{
 #' aliquot.ids <- c("e0fccaf5-925a-41f9-b87c-cd5ee4aecb59", "foo")
 #' SP.ids <- map_aliquot_ID_to_SP_ID(aliquot.ids)
-#' }
 map_aliquot_ID_to_SP_ID <- function(aliquot.ids) {
   indices <- match(x = aliquot.ids, table = PCAWG7::PCAWG.sample.sheet$aliquot_id)
   SP.ids <- PCAWG7::PCAWG.sample.sheet$icgc_specimen_id[indices]

@@ -1,7 +1,7 @@
 #' PCAWG7 SigProfiler signature assignments (numbers of mutations due to each signature in each tumor)
 #'
 #' @source Files of \url{https://www.synapse.org/#!Synapse:syn12009743},
-#'   2019 Oct 09, populated by
+#'   2019 Oct 09, \cr populated by
 #'  \code{data-raw/sig.profiler.sures/load.package.variable.exposure.R}.
 #'
 #' @format
@@ -130,33 +130,6 @@
 #'
 #' @name PCAWG.sample.id
 "PCAWG.sample.id"
-
-#' List of proposed etiologies from PCAWG7 paper, some manually abbreviated and
-#' a few summarized from the COSMIC web site
-#'
-#' @format
-#'
-#' A list with the elements:
-#' * SBS96
-#' * SBS192
-#' * DBS78
-#' * ID
-#'
-#' Each list element is a single column matrix with rownames being the
-#' signature IDs and values being a short character string
-#' description of the
-#' proposed etiology.
-#'
-#' In general use \code{\link{GetEtiology}}, which handles new
-#' signatures without elements in \code{etiologies}.
-#' @name etiologies
-#'
-#' @md
-#'
-#' @examples
-#' SBS96.etiologies <- etiologies$SBS96
-#'
-"etiologies"
 
 #' PCAWG sample sheet which contains various sample information
 #'

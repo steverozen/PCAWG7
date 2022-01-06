@@ -1,10 +1,8 @@
-#' PCAWG7: A package of data from COSMIC (the Catalogue Of Somatic
-#' Mutations In Cancer) website
-#' \url{https://cancer.sanger.ac.uk/signatures/} and paper 'Repertoire
+#' PCAWG7: A package of data from paper 'Repertoire
 #' of Mutational Signatures in Human Cancer'
 #'
-#' This is a data package with 3 main package variables:
-#' \code{\link{exposure}}, \code{\link{signature}}, and \code{\link{spectra}}.
+#' This is a data package with 2 main package variables:
+#' \code{\link{exposure}} and \code{\link{spectra}}.
 #'
 #' There are also PDF plots of the signatures in \code{data-raw/plots/}.
 #'
@@ -26,10 +24,6 @@
 #' The repertoire of mutational signatures in human cancer.
 #' Nature 578, 94-101 (2020). \doi{10.1038/s41586-020-1943-3}.
 #'
-#' COSMIC mutational signatures data were downloaded from
-#' \url{https://cancer.sanger.ac.uk/signatures/downloads/}.
-#'
 #' @docType package
 #' @name PCAWG7
 NULL
-#> NULL

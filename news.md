@@ -1,3 +1,16 @@
+# PCAWG7 0.1.3
+* Removed the following exported data and functions as they are moved to another package [cosmicsig](https://CRAN.R-project.org/package=cosmicsig):
+  + `COSMIC.v3.2`
+  + `COSMIC.v3.1`
+  + `COSMIC.v3.0`
+  + `signature`
+  + `etiologies`
+  + `GetEtiology`
+
+* Removed `tests\testthat\test_GetEtiology.R`
+
+* Updated documentation
+
 # PCAWG7 0.1.1.9006
 * Added new exported data `COSMIC.v3.2` and documentation
 
