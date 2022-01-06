@@ -36,4 +36,4 @@ remotes::install_github(repo = "steverozen/PCAWG7", ref = "master")
 
 ## Reference manual
 
-<https://github.com/steverozen/PCAWG7/blob/COSMIC-v3.2/data-raw/PCAWG7_0.1.2.pdf>
+<https://github.com/steverozen/PCAWG7/blob/v0.1.2-branch/data-raw/PCAWG7_0.1.2.pdf>
