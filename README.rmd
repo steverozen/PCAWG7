@@ -38,7 +38,7 @@ Install PCAWG7 from the master branch on [GitHub](https://github.com/):
 if (!requireNamespace("remotes", quietly = TRUE)) {
   install.packages("remotes")
 }
-remotes::install_github(repo = "steverozen/PCAWG7", ref = "master")
+remotes::install_github(repo = "steverozen/PCAWG7", ref = "v0.1.3-branch")
 ```
 
 ## Reference manual
