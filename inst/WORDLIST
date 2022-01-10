@@ -1,11 +1,9 @@
 Alexandrov
 BSgenome
 Cancer’
-Catalogue
 ChRCC
 DBS
 DBSs
-GRCh
 Greylisted
 Haradhvala
 ICAMS
@@ -18,7 +16,6 @@ SigProfiler
 SignatureExposureInfo
 SplitMatrixBySampleType
 TCGA
-Transcriptionally
 WGS
 aecb
 al
@@ -26,6 +23,7 @@ aliquot
 api
 callsets
 cd
+cosmicsig
 dcc
 doi
 ee
@@ -41,11 +39,8 @@ indel
 indels
 passonly
 pentanucleotide
-sanger
 snv
 steverozen
 tgz
 trinucleotide
-tt
-uk
 wgs
