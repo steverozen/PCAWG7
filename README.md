@@ -24,7 +24,7 @@ updated.
 
 ## Installation
 
-Install PCAWG7 from the master branch on [GitHub](https://github.com/):
+Install PCAWG7 from [GitHub](https://github.com/):
 
 ``` r
 if (!requireNamespace("remotes", quietly = TRUE)) {
