@@ -24,13 +24,27 @@ updated.
 
 ## Installation
 
-Install PCAWG7 from [GitHub](https://github.com/):
+### Latest stable version
 
 ``` r
 if (!requireNamespace("remotes", quietly = TRUE)) {
   install.packages("remotes")
 }
-remotes::install_github(repo = "steverozen/PCAWG7", ref = "v0.1.3-branch")
+remotes::install_github(repo = "steverozen/PCAWG7")
+```
+
+### Get the development version
+
+To use new features in the development version, you can install PCAWG7
+from the master branch on
+[GitHub](https://github.com/steverozen/PCAWG7/tree/master), which may
+not be stable:
+
+``` r
+if (!requireNamespace("remotes", quietly = TRUE)) {
+  install.packages("remotes")
+}
+remotes::install_github(repo = "steverozen/PCAWG7", ref = "master")
 ```
 
 ## Reference manual
