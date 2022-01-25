@@ -6,8 +6,11 @@
   + `signature`
   + `etiologies`
   + `GetEtiology`
+  + `SBS96_ID_to_SBS192_ID`
 
 * Removed `tests\testthat\test_GetEtiology.R`
+
+* Removed `tests\testthat\test_SBS96_ID_to_SBS192_ID.R`
 
 * Updated documentation
 
