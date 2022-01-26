@@ -28,7 +28,7 @@ RoxygenNote: 7.1.2
 URL: https://github.com/steverozen/PCAWG7
 BugReports: https://github.com/steverozen/PCAWG7/issues
 Imports: ICAMS
-Remotes: github::steverozen/ICAMS@*release
+Remotes: github::steverozen/ICAMS@v3.0.5-branch
 Suggests: 
     usethis,
     testthat (>= 3.0.0)
