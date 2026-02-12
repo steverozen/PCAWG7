@@ -2,6 +2,7 @@
 % Please edit documentation in R/PCAWG7.R
 \docType{package}
 \name{PCAWG7}
+\alias{PCAWG7-package}
 \alias{PCAWG7}
 \title{PCAWG7: A package of data from paper 'Repertoire
 of Mutational Signatures in Human Cancer'}
@@ -29,4 +30,21 @@ The reference for the data is
 Alexandrov, L.B., Kim, J., Haradhvala, N.J. et al.
 The repertoire of mutational signatures in human cancer.
 Nature 578, 94-101 (2020). \doi{10.1038/s41586-020-1943-3}.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/steverozen/PCAWG7}
+  \item Report bugs at \url{https://github.com/steverozen/PCAWG7/issues}
+}
+
+}
+\author{
+\strong{Maintainer}: Steven G. Rozen \email{steverozen@pm.me} (\href{https://orcid.org/0000-0002-4288-0056}{ORCID})
+
+Authors:
+\itemize{
+  \item Nanhai Jiang (\href{https://orcid.org/0000-0003-4974-2753}{ORCID})
+}
+
 }
