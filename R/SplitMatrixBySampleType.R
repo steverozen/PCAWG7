@@ -1,7 +1,6 @@
 #' Split an exposure matrix or spectrum matrix into a list of matrices, each for a single sample type
 #'
-#' @param M A numerical matrix or data frame or
-#'   \code{\link[ICAMS]{ICAMS}} catalog in which
+#' @param M A numerical matrix or data frame in which
 #'   columns are samples (e.g. tumors) and rows are either
 #'   mutational signatures (for exposures) or mutation types (for
 #'   spectra), and, each element is the number of mutations due
@@ -24,27 +23,15 @@
 #' @export
 #'
 SplitMatrixBySampleType <- function(M, sample.type) {
+  extra.attrs <- attributes(M)
+  extra.attrs[c("dim", "dimnames")] <- NULL
   split.tt <- split(as.data.frame(t(M)), sample.type)
-  M.catalog.type <- attr(M, "catalog.type")
-  if (is.null(M.catalog.type)) {
-    rr <- lapply(split.tt, t)
-  } else {
-    if ("" == system.file(package = "ICAMS")) {
-      stop("\nPlease install ICAMS: install.packages(\"ICAMS\")")
+  rr <- lapply(split.tt, function(rrr) {
+    rrr <- t(rrr)
+    for (a in names(extra.attrs)) {
+      attr(rrr, a) <- extra.attrs[[a]]
     }
-    M.region     <- attr(M, "region")
-    M.ref.genome <- attr(M, "ref.genome")
-    M.abundance  <- attr(M, "abundance")
-    rr <- lapply(split.tt,
-                 function(rrr) {
-                   rrr <- t(rrr)
-                   return(ICAMS::as.catalog(
-                     rrr,
-                     ref.genome   = M.ref.genome,
-                     region       = M.region,
-                     catalog.type = M.catalog.type,
-                     abundance    = M.abundance))
-                 })
-  }
+    rrr
+  })
   invisible(rr)
 }

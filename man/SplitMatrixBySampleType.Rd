@@ -7,8 +7,7 @@
 SplitMatrixBySampleType(M, sample.type)
 }
 \arguments{
-\item{M}{A numerical matrix or data frame or
-\code{\link[ICAMS]{ICAMS}} catalog in which
+\item{M}{A numerical matrix or data frame in which
 columns are samples (e.g. tumors) and rows are either
 mutational signatures (for exposures) or mutation types (for
 spectra), and, each element is the number of mutations due
